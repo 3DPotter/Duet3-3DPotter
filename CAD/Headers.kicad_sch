@@ -19209,9 +19209,9 @@
 		(at 201.295 62.865 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005c26f8cb")
 		(property "Reference" "J48"
 			(at 202.565 81.28 0)

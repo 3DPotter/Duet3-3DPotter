@@ -17699,7 +17699,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3f01028-a0d1-49a8-b43e-d7dd75d8ef97")
@@ -17719,7 +17719,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "3DPotter:Empty_Footprint"
 			(at 182.88 146.558 90)
 			(effects
 				(font
