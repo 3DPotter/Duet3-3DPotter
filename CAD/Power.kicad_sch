@@ -4299,9 +4299,9 @@
 		)
 		(uuid "04ca15a5-2d58-4420-bff1-26d1e607e747")
 	)
-	(text "Cant find exactly 95k and 5k (from yageo). Output should be ~11.8v"
+	(text "Cant find exactly 95k and 5k (from yageo). \nOutput should be ~11.8v instead of 12v"
 		(exclude_from_sim no)
-		(at 196.85 158.75 0)
+		(at 171.45 184.15 0)
 		(effects
 			(font
 				(size 1.524 1.524)
