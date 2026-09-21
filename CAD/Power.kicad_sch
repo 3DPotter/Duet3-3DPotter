@@ -12235,7 +12235,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47nF 16V"
+		(property "Value" "47uF 16V"
 			(at 201.93 61.341 90)
 			(effects
 				(font
@@ -14524,7 +14524,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47nF 16V"
+		(property "Value" "47uF 16V"
 			(at 209.55 61.341 90)
 			(effects
 				(font
