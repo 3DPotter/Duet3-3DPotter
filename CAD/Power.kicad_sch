@@ -4265,6 +4265,18 @@
 		)
 	)
 	(rectangle
+		(start 29.21 287.02)
+		(end 116.84 336.55)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 19314a90-7d36-44de-9b07-fe3e1e477151)
+	)
+	(rectangle
 		(start 27.94 13.97)
 		(end 257.81 124.46)
 		(stroke
@@ -4319,6 +4331,16 @@
 		)
 		(uuid "124ed3fc-404d-48bf-a67e-4c96991d65f4")
 	)
+	(text "Additional Info\n"
+		(exclude_from_sim no)
+		(at 39.37 289.56 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "15ad6398-8861-40e7-a7af-e0074ef67012")
+	)
 	(text "PS_ON Control"
 		(exclude_from_sim no)
 		(at 120.65 264.16 0)
@@ -4339,6 +4361,17 @@
 			)
 		)
 		(uuid "216d9c1d-018d-4911-8c0d-e4b4e8bb92db")
+	)
+	(text "Note: These are absolute max input ratings. The board will not\nexceed these nor will the board get near these in normal operation.\nNormal operation of the machine may see wattages closer to <15W"
+		(exclude_from_sim no)
+		(at 30.48 302.26 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "248713e3-0a8a-455b-a3d5-8bd58bc1a887")
 	)
 	(text "Efficiency 87%-92%\n12 watt output = 13.8w - 13w input"
 		(exclude_from_sim no)
@@ -4404,6 +4437,17 @@
 		)
 		(uuid "7742dae6-1dd0-4492-8921-1d214bbb309b")
 	)
+	(text "75V MAX WATTS: 112.5W / 38W w/o max fan output\n24V MAX WATTS: 60W/ 36W w/o max fan output"
+		(exclude_from_sim no)
+		(at 30.48 294.64 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "7772e026-2be5-4a3e-be45-07ae591bbf4e")
+	)
 	(text "5V Input, 3.3V  Output for external use only\nLow Drop-Out Linear Regulator"
 		(exclude_from_sim no)
 		(at 30.48 250.19 0)
@@ -4438,7 +4482,7 @@
 	)
 	(text "ESD protection Diodes"
 		(exclude_from_sim no)
-		(at 218.44 205.74 0)
+		(at 215.9 262.89 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -4449,7 +4493,7 @@
 	)
 	(text "DONE\n"
 		(exclude_from_sim no)
-		(at 247.65 210.82 0)
+		(at 245.11 267.97 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -4478,9 +4522,9 @@
 		)
 		(uuid "a0b7b4e2-3b04-4dc0-bdb5-68dbc2bdd7c3")
 	)
-	(text "5V Input, 3.3V  Output for internal use only\nLow Drop-Out Linear Regulator"
+	(text "5V Input, 3.3V  Output for internal use only\nLow Drop-Out Linear Regulator\n1 Amp max, 5W input, ~3.3W output\n"
 		(exclude_from_sim no)
-		(at 30.48 207.01 0)
+		(at 30.48 208.28 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -4520,6 +4564,16 @@
 		)
 		(uuid "dcbb2089-65a6-482a-97b7-ebd738077b72")
 	)
+	(text "87.4% Efficiency (Steady-State)\n30 Watt Output MAX ~= 34.3 Watts Input ~= 0.46A@75V or 1.43A@24V "
+		(exclude_from_sim no)
+		(at 137.16 19.05 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "ec4161e6-9184-4604-8cf4-7c290157f273")
+	)
 	(text "L1 arbitrarily chosen, inductance and DCR may need to be dialed in."
 		(exclude_from_sim no)
 		(at 129.54 135.89 0)
@@ -4532,7 +4586,7 @@
 	)
 	(text "Yes, this fuse looks weird, it consists of 2 parts and\nKiCad does not have a good way of handling 1 symbol with 2 pieces\nFuse holder for 1/4\"x1 1/4\" (6.38mmx35mm) Ceramic (or glass?) fuses"
 		(exclude_from_sim no)
-		(at 183.896 209.804 0)
+		(at 206.756 218.694 0)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -5168,7 +5222,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 217.17) (xy 232.41 219.71)
+			(xy 229.87 274.32) (xy 229.87 276.86)
 		)
 		(stroke
 			(width 0)
@@ -5438,7 +5492,7 @@
 	)
 	(polyline
 		(pts
-			(xy 215.9 200.66) (xy 215.9 256.54)
+			(xy 213.36 257.81) (xy 213.36 313.69)
 		)
 		(stroke
 			(width 0)
@@ -5658,7 +5712,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 228.6) (xy 232.41 224.79)
+			(xy 229.87 285.75) (xy 229.87 281.94)
 		)
 		(stroke
 			(width 0)
@@ -5838,7 +5892,7 @@
 	)
 	(polyline
 		(pts
-			(xy 214.63 256.54) (xy 214.63 200.66)
+			(xy 231.14 256.54) (xy 231.14 200.66)
 		)
 		(stroke
 			(width 0)
@@ -5978,7 +6032,7 @@
 	)
 	(polyline
 		(pts
-			(xy 256.54 200.66) (xy 215.9 200.66)
+			(xy 254 257.81) (xy 213.36 257.81)
 		)
 		(stroke
 			(width 0)
@@ -6458,7 +6512,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 246.38) (xy 232.41 242.57)
+			(xy 229.87 303.53) (xy 229.87 299.72)
 		)
 		(stroke
 			(width 0)
@@ -6698,7 +6752,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 234.95) (xy 232.41 237.49)
+			(xy 229.87 292.1) (xy 229.87 294.64)
 		)
 		(stroke
 			(width 0)
@@ -6728,7 +6782,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 217.17) (xy 232.41 217.17)
+			(xy 224.79 274.32) (xy 229.87 274.32)
 		)
 		(stroke
 			(width 0)
@@ -7048,7 +7102,7 @@
 	)
 	(polyline
 		(pts
-			(xy 256.54 256.54) (xy 256.54 200.66)
+			(xy 254 313.69) (xy 254 257.81)
 		)
 		(stroke
 			(width 0)
@@ -7158,7 +7212,7 @@
 	)
 	(polyline
 		(pts
-			(xy 165.1 256.54) (xy 214.63 256.54)
+			(xy 165.1 256.54) (xy 231.14 256.54)
 		)
 		(stroke
 			(width 0)
@@ -7578,7 +7632,7 @@
 	)
 	(polyline
 		(pts
-			(xy 214.63 200.66) (xy 165.1 200.66)
+			(xy 231.14 200.66) (xy 165.1 200.66)
 		)
 		(stroke
 			(width 0)
@@ -7648,7 +7702,7 @@
 	)
 	(polyline
 		(pts
-			(xy 215.9 256.54) (xy 256.54 256.54)
+			(xy 213.36 313.69) (xy 254 313.69)
 		)
 		(stroke
 			(width 0)
@@ -7658,7 +7712,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 234.95) (xy 232.41 234.95)
+			(xy 223.52 292.1) (xy 229.87 292.1)
 		)
 		(stroke
 			(width 0)
@@ -8178,7 +8232,7 @@
 	)
 	(global_label "+3.3V"
 		(shape input)
-		(at 226.06 234.95 180)
+		(at 223.52 292.1 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8188,7 +8242,7 @@
 		)
 		(uuid "749e2120-47e7-4c73-8ea1-aa6da11b311b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 216.4415 234.95 0)
+			(at 213.9015 292.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8530,7 +8584,7 @@
 	)
 	(global_label "5V_INT"
 		(shape input)
-		(at 227.33 217.17 180)
+		(at 224.79 274.32 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8540,7 +8594,7 @@
 		)
 		(uuid "e4128a0e-cb41-4c76-8a23-7c06f52a5755")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 217.131 217.17 0)
+			(at 214.591 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10353,7 +10407,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Zener_Small")
-		(at 232.41 222.25 270)
+		(at 229.87 279.4 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10361,7 +10415,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061de53ea")
 		(property "Reference" "D54"
-			(at 234.1372 221.0816 90)
+			(at 231.5972 278.2316 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10370,7 +10424,7 @@
 			)
 		)
 		(property "Value" "D_TVS_5V"
-			(at 234.1372 223.393 90)
+			(at 231.5972 280.543 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10379,7 +10433,7 @@
 			)
 		)
 		(property "Footprint" "3DPotter:DFN1610-2L"
-			(at 232.41 222.25 90)
+			(at 229.87 279.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10388,7 +10442,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 232.41 222.25 90)
+			(at 229.87 279.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10397,7 +10451,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 232.41 222.25 0)
+			(at 229.87 279.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10406,7 +10460,7 @@
 			)
 		)
 		(property "Part Number" "LTVS16H5.0T5G"
-			(at 232.41 222.25 90)
+			(at 229.87 279.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10415,7 +10469,7 @@
 			)
 		)
 		(property "LCSC" "C172440"
-			(at 232.41 222.25 90)
+			(at 229.87 279.4 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10440,7 +10494,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Zener_Small")
-		(at 232.41 240.03 270)
+		(at 229.87 297.18 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10448,7 +10502,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061de561f")
 		(property "Reference" "D55"
-			(at 234.1372 238.8616 90)
+			(at 231.5972 296.0116 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10457,7 +10511,7 @@
 			)
 		)
 		(property "Value" "D_TVS_3.3V"
-			(at 234.1372 241.173 90)
+			(at 231.5972 298.323 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10466,7 +10520,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMB"
-			(at 232.41 240.03 90)
+			(at 229.87 297.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10475,7 +10529,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 232.41 240.03 90)
+			(at 229.87 297.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10484,7 +10538,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 232.41 240.03 0)
+			(at 229.87 297.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10493,7 +10547,7 @@
 			)
 		)
 		(property "Part Number" "SMBJ3.3A"
-			(at 232.41 240.03 90)
+			(at 229.87 297.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10502,7 +10556,7 @@
 			)
 		)
 		(property "LCSC" "C2990571"
-			(at 232.41 240.03 90)
+			(at 229.87 297.18 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10528,7 +10582,7 @@
 	(symbol
 		(lib_name "GND_6")
 		(lib_id "Duet3:GND")
-		(at 232.41 228.6 0)
+		(at 229.87 285.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10536,7 +10590,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061e170dc")
 		(property "Reference" "#PWR031"
-			(at 232.41 228.6 0)
+			(at 229.87 285.75 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -10545,7 +10599,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 232.41 230.378 0)
+			(at 229.87 287.528 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -10554,7 +10608,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 232.41 228.6 0)
+			(at 229.87 285.75 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10563,7 +10617,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 232.41 228.6 0)
+			(at 229.87 285.75 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10572,7 +10626,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 232.41 228.6 0)
+			(at 229.87 285.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10595,7 +10649,7 @@
 	(symbol
 		(lib_name "GND_7")
 		(lib_id "Duet3:GND")
-		(at 232.41 246.38 0)
+		(at 229.87 303.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10603,7 +10657,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061e3044e")
 		(property "Reference" "#PWR070"
-			(at 232.41 246.38 0)
+			(at 229.87 303.53 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -10612,7 +10666,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 232.41 248.158 0)
+			(at 229.87 305.308 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -10621,7 +10675,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 232.41 246.38 0)
+			(at 229.87 303.53 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10630,7 +10684,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 232.41 246.38 0)
+			(at 229.87 303.53 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10639,7 +10693,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 232.41 246.38 0)
+			(at 229.87 303.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14189,9 +14243,9 @@
 		(at 182.88 218.44 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "b3f01028-a0d1-49a8-b43e-d7dd75d8ef97")
 		(property "Reference" "F8"

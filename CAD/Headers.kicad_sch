@@ -8265,7 +8265,7 @@
 		)
 		(uuid "037a67a4-4ee9-434c-a899-0fbc53123691")
 	)
-	(text "Always on FAN for board cooling"
+	(text "Always on FAN for board cooling\nMAX 1 AMP. DO NOT EXCEED"
 		(exclude_from_sim no)
 		(at 46.355 81.026 0)
 		(effects
