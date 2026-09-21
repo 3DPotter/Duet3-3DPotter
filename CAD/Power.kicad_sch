@@ -12305,6 +12305,24 @@
 				(hide yes)
 			)
 		)
+		(property "P/N" "FP6291LR-G12"
+			(at 143.51 163.83 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C18701"
+			(at 143.51 163.83 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3bb5b052-ae5e-4278-a16f-37b9972c90ba")
 		)
