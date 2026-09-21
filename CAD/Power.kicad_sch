@@ -5758,16 +5758,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 163.83) (xy 102.87 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51a58465-e799-4b94-9ac1-a190d9bbf96c")
-	)
-	(wire
-		(pts
 			(xy 97.79 100.33) (xy 97.79 95.25)
 		)
 		(stroke
@@ -5795,6 +5785,16 @@
 			(type default)
 		)
 		(uuid "54cbd3f8-6947-496c-885a-07c262dd4abb")
+	)
+	(wire
+		(pts
+			(xy 102.87 163.83) (xy 102.87 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "567c8acf-924b-4a3a-860e-d86b795c9138")
 	)
 	(wire
 		(pts
@@ -7927,7 +7927,7 @@
 		(uuid "cb96f135-eefc-42dc-8298-0b1b535b823f")
 	)
 	(label "ISET"
-		(at 102.87 163.83 180)
+		(at 102.87 166.37 180)
 		(effects
 			(font
 				(size 1.27 1.27)
