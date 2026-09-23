@@ -1776,6 +1776,140 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Jumper"
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Device_Jumper"
+				(at 0 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Jumper_0_1"
+				(circle
+					(center -2.54 0)
+					(radius 0.889)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.4892 1.27)
+					(mid 0.0127 2.5097)
+					(end 2.5146 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 0)
+					(radius 0.889)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 4.191)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 4.191)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -4266,7 +4400,7 @@
 	)
 	(rectangle
 		(start 29.21 287.02)
-		(end 116.84 336.55)
+		(end 116.84 353.06)
 		(stroke
 			(width 0)
 			(type dash)
@@ -4395,6 +4529,17 @@
 		)
 		(uuid "461f5eca-42a9-4f9e-b4d6-cac326806c8b")
 	)
+	(text "Cartesians:\nAll cartesians run 24V. As all cartesians\ndont use sensors (if the have a driver board)\n12V Buck Converter is not used, so ~13W can be\nremoved from the fuse calculations."
+		(exclude_from_sim no)
+		(at 30.48 313.69 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "4cd7eb5c-9c0a-4dd5-bfec-a479c7a300cc")
+	)
 	(text "C37, C38, C39, and C40 are all arbitrarily chosen. \nCapacitance may need to be dialed in."
 		(exclude_from_sim no)
 		(at 189.23 144.78 0)
@@ -4437,7 +4582,7 @@
 		)
 		(uuid "7742dae6-1dd0-4492-8921-1d214bbb309b")
 	)
-	(text "75V MAX WATTS: 112.5W / 38W w/o max fan output\n24V MAX WATTS: 60W/ 36W w/o max fan output"
+	(text "75V MAX WATTS: 112.5W / 38W w/o max fan output\n24V MAX WATTS: 60W/ 36W (or 23W no 12V) w/o max fan output"
 		(exclude_from_sim no)
 		(at 30.48 294.64 0)
 		(effects
@@ -4468,6 +4613,16 @@
 			)
 		)
 		(uuid "82d8c715-2271-45d3-8b2d-af9fa5ce1b00")
+	)
+	(text "If you can think of a good reason that this is a bad idea\nThen be my guest and change this"
+		(exclude_from_sim no)
+		(at 86.36 154.94 0)
+		(effects
+			(font
+				(size 0.508 0.508)
+			)
+		)
+		(uuid "89bdc7ac-6772-404c-9eaa-3e59b8538342")
 	)
 	(text "Power LEDs"
 		(exclude_from_sim no)
@@ -4605,12 +4760,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "04a42b56-b095-499d-9ffe-de1c4d60a7cf")
-	)
-	(junction
-		(at 102.87 161.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "04c626cb-e5f4-429f-8f47-4b0e15c776a5")
 	)
 	(junction
 		(at 193.04 46.99)
@@ -4971,12 +5120,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d985b6ce-f45a-4a86-b46c-37694ddb426f")
-	)
-	(junction
-		(at 99.06 161.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "db1888d6-9630-4b53-87a6-2c256bae18da")
 	)
 	(junction
 		(at 236.22 29.21)
@@ -5942,16 +6085,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 161.29) (xy 102.87 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5fca84fa-a5b8-4425-ba75-ad6591abc9a5")
-	)
-	(wire
-		(pts
 			(xy 90.17 232.41) (xy 62.23 232.41)
 		)
 		(stroke
@@ -6089,16 +6222,6 @@
 			(type default)
 		)
 		(uuid "6a86bfab-8c37-4c5b-88d7-a3d54f402764")
-	)
-	(wire
-		(pts
-			(xy 102.87 158.75) (xy 102.87 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6cfe229d-95f2-49c3-aa86-a09548f54a88")
 	)
 	(wire
 		(pts
@@ -6449,6 +6572,16 @@
 			(type default)
 		)
 		(uuid "8aaa0544-301e-4e4a-b2bd-def070fc2ec4")
+	)
+	(wire
+		(pts
+			(xy 85.09 158.75) (xy 87.63 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bc32bff-e55d-4f65-8a2e-6deba2aafe2b")
 	)
 	(wire
 		(pts
@@ -6922,7 +7055,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 143.51) (xy 99.06 143.51)
+			(xy 120.65 143.51) (xy 73.66 143.51)
 		)
 		(stroke
 			(width 0)
@@ -6992,7 +7125,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 143.51) (xy 99.06 161.29)
+			(xy 73.66 143.51) (xy 73.66 161.29)
 		)
 		(stroke
 			(width 0)
@@ -7109,6 +7242,16 @@
 			(type dash)
 		)
 		(uuid "ce9c26f2-66f6-4c89-a76a-21ca484fc84e")
+	)
+	(wire
+		(pts
+			(xy 88.9 161.29) (xy 102.87 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cead0e8f-ad35-4be6-a983-ad34df4ed35a")
 	)
 	(wire
 		(pts
@@ -7339,16 +7482,6 @@
 			(type default)
 		)
 		(uuid "e0b71791-465b-4b6e-8e8c-bb1a028a82da")
-	)
-	(wire
-		(pts
-			(xy 88.9 161.29) (xy 99.06 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e18e02b8-e1e5-4185-9b49-168320d3779f")
 	)
 	(wire
 		(pts
@@ -7742,6 +7875,16 @@
 	)
 	(polyline
 		(pts
+			(xy 78.74 154.94) (xy 78.74 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff46e2b1-ee52-4e08-b53c-bd671737f5b4")
+	)
+	(polyline
+		(pts
 			(xy 163.83 309.88) (xy 213.36 309.88)
 		)
 		(stroke
@@ -7799,6 +7942,16 @@
 			(justify right bottom)
 		)
 		(uuid "2f10b0fb-7051-4495-919f-5786da4365f0")
+	)
+	(label "12v_ext_fuse"
+		(at 85.09 158.75 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "36c07438-1f11-421f-aedf-0d2e5e0a1d02")
 	)
 	(label "12v_ext_fuse"
 		(at 228.6 21.59 180)
@@ -12235,7 +12388,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47uF 16V"
+		(property "Value" "47nF 16V"
 			(at 201.93 61.341 90)
 			(effects
 				(font
@@ -14172,6 +14325,102 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Jumper")
+		(at 95.25 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b3576d73-5bf3-4e2b-9cc2-7c991ae43082")
+		(property "Reference" "JP7"
+			(at 100.9142 154.8384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "12V_ENABLE"
+			(at 100.9142 152.527 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 95.25 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "PZ254V-11-02P"
+			(at 95.25 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C492401"
+			(at 95.25 158.75 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "RotOffset" "90"
+			(at 95.25 158.75 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "582070c0-b2de-4d36-8856-20a786343aba")
+		)
+		(pin "2"
+			(uuid "a47baaf3-d2f4-4baf-8c81-faec2cc743fa")
+		)
+		(instances
+			(project "Duet3_MB_3DP"
+				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-000050577a22"
+					(reference "JP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "GND_3")
 		(lib_id "Duet3:GND")
 		(at 212.09 64.77 0)
@@ -14524,7 +14773,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47uF 16V"
+		(property "Value" "47nF 16V"
 			(at 209.55 61.341 90)
 			(effects
 				(font
