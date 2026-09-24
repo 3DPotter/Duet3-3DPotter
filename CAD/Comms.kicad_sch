@@ -14971,7 +14971,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005706be58")
 		(property "Reference" "R122"
-			(at 60.325 227.33 90)
+			(at 59.69 222.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14979,7 +14979,7 @@
 			)
 		)
 		(property "Value" "27K"
-			(at 57.785 222.25 90)
+			(at 59.69 227.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
