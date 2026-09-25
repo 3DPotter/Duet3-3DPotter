@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "c1782c6e-f454-4a7a-9b30-4169b193813e")
 	(paper "A3" portrait)
 	(title_block
@@ -19,8 +19,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at 3.81 15.875 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -29,7 +33,8 @@
 			)
 			(property "Value" "SN74F125DR"
 				(at 0.635 -0.635 0)
-				(do_not_autoplace)
+				(show_name no)
+				(do_not_autoplace yes)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -38,56 +43,68 @@
 			)
 			(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 				(at 0 24.0538 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/sn74f125.pdf"
 				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Field4" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Part Number" "SN74F125DR"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "LCSC" "C2675540"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "SN74F125DR_0_1"
@@ -140,6 +157,24 @@
 						)
 					)
 				)
+				(pin tri_state line
+					(at 19.05 10.16 180)
+					(length 7.62)
+					(name "1Y"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
 				(pin input line
 					(at -19.05 3.81 0)
 					(length 7.62)
@@ -176,89 +211,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -19.05 -3.81 0)
+				(pin tri_state line
+					(at 19.05 2.54 180)
 					(length 7.62)
-					(name "3~{OE}"
+					(name "2Y"
 						(effects
 							(font
 								(size 1.524 1.524)
 							)
 						)
 					)
-					(number "10"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -19.05 -7.62 0)
-					(length 7.62)
-					(name "3A"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -19.05 -11.43 0)
-					(length 7.62)
-					(name "4~{OE}"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -19.05 -15.24 0)
-					(length 7.62)
-					(name "4A"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 21.59 270)
-					(length 7.62)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "14"
+					(number "6"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -285,42 +248,6 @@
 					)
 				)
 				(pin tri_state line
-					(at 19.05 10.16 180)
-					(length 7.62)
-					(name "1Y"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
-				(pin tri_state line
-					(at 19.05 2.54 180)
-					(length 7.62)
-					(name "2Y"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
-				(pin tri_state line
 					(at 19.05 -6.35 180)
 					(length 7.62)
 					(name "3Y"
@@ -331,6 +258,42 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -19.05 -7.62 0)
+					(length 7.62)
+					(name "3A"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -19.05 -3.81 0)
+					(length 7.62)
+					(name "3~{OE}"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "10"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -356,6 +319,60 @@
 						)
 					)
 				)
+				(pin input line
+					(at -19.05 -15.24 0)
+					(length 7.62)
+					(name "4A"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -19.05 -11.43 0)
+					(length 7.62)
+					(name "4~{OE}"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 21.59 270)
+					(length 7.62)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
@@ -366,8 +383,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U14"
 				(at 0 21.59 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -376,6 +397,8 @@
 			)
 			(property "Value" "SN74LVC4245APWR"
 				(at 0 19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -384,67 +407,81 @@
 			)
 			(property "Footprint" "3DPotter:PW24"
 				(at -31.75 13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 						(italic yes)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "https://www.ti.com/lit/gpn/sn74lvc4245a"
 				(at -31.75 13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 						(italic yes)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "RotOffset" "90"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
-					(hide yes)
 				)
 			)
 			(property "LCSC" "C7859"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "SN74LVC4245APW"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "PW24 PW24-M PW24-L"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "SN74LVC4245APW_0_1"
@@ -665,34 +702,16 @@
 					)
 				)
 				(pin power_in line
-					(at 16.51 13.97 180)
+					(at 16.51 -13.97 180)
 					(length 7.62)
-					(name "VCCB"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 16.51 11.43 180)
-					(length 7.62)
-					(name "VCCB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
+					(number "13"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -701,88 +720,16 @@
 					)
 				)
 				(pin bidirectional line
-					(at 16.51 6.35 180)
+					(at 16.51 -11.43 180)
 					(length 7.62)
-					(name "B1"
+					(name "B8"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 16.51 1.27 180)
-					(length 7.62)
-					(name "B3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 16.51 -1.27 180)
-					(length 7.62)
-					(name "B4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 16.51 -3.81 180)
-					(length 7.62)
-					(name "B5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 16.51 -6.35 180)
-					(length 7.62)
-					(name "B6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
+					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -809,16 +756,88 @@
 					)
 				)
 				(pin bidirectional line
-					(at 16.51 -11.43 180)
+					(at 16.51 -6.35 180)
 					(length 7.62)
-					(name "B8"
+					(name "B6"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "14"
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 16.51 -3.81 180)
+					(length 7.62)
+					(name "B5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 16.51 -1.27 180)
+					(length 7.62)
+					(name "B4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 16.51 1.27 180)
+					(length 7.62)
+					(name "B3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 16.51 6.35 180)
+					(length 7.62)
+					(name "B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -827,16 +846,34 @@
 					)
 				)
 				(pin power_in line
-					(at 16.51 -13.97 180)
+					(at 16.51 11.43 180)
 					(length 7.62)
-					(name "GND"
+					(name "VCCB"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "13"
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 16.51 13.97 180)
+					(length 7.62)
+					(name "VCCB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -857,24 +894,6 @@
 						(type background)
 					)
 				)
-				(pin input line
-					(at 16.51 8.89 180)
-					(length 7.62)
-					(name "~{OE}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin bidirectional line
 					(at 16.51 3.81 180)
 					(length 7.62)
@@ -886,6 +905,24 @@
 						)
 					)
 					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 16.51 8.89 180)
+					(length 7.62)
+					(name "~{OE}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -907,8 +944,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "C"
 				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -918,6 +959,8 @@
 			)
 			(property "Value" "C_Small"
 				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -927,47 +970,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "capacitor cap"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "C_Small_0_1"
@@ -1000,7 +1053,7 @@
 				(pin passive line
 					(at 0 2.54 270)
 					(length 2.032)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1018,7 +1071,7 @@
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 2.032)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1047,8 +1100,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
 				(at 0.762 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1058,6 +1115,8 @@
 			)
 			(property "Value" "R_Small"
 				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1067,47 +1126,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Resistor, small symbol"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "R resistor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "R_Small_0_1"
@@ -1127,7 +1196,7 @@
 				(pin passive line
 					(at 0 2.54 270)
 					(length 0.762)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1145,7 +1214,7 @@
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 0.762)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1164,7 +1233,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "GND_1"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -1175,26 +1244,34 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND_1"
 				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -1203,6 +1280,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -1211,11 +1290,13 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_1_0_1"
@@ -1256,7 +1337,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "GND_3"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -1267,26 +1348,34 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND_3"
 				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -1295,6 +1384,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -1303,11 +1394,13 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_3_0_1"
@@ -1348,7 +1441,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "GND_7"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -1359,26 +1452,34 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND_7"
 				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -1387,6 +1488,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -1395,11 +1498,13 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_7_0_1"
@@ -1440,7 +1545,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "GND_8"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -1451,26 +1556,34 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND_8"
 				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -1479,6 +1592,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -1487,11 +1602,13 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_8_0_1"
@@ -3802,11 +3919,13 @@
 		(uuid "00669907-7c4f-42ca-a305-f284cb0ec921")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 267.97 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -3823,12 +3942,14 @@
 		(uuid "00ceed4d-ace7-4f2c-8a96-09944b02c8e5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 198.9572 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -3844,11 +3965,13 @@
 		(uuid "04bf644a-64d1-455d-9e29-205c1ae1495a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 92.71 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -3864,11 +3987,13 @@
 		(uuid "069b808f-899b-4151-92b1-3ec02e567e5c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 175.26 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -3884,11 +4009,13 @@
 		(uuid "0a785069-6745-44c1-9c76-3c8bedc62abe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 58.42 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -3905,12 +4032,14 @@
 		(uuid "0b20de5a-7ece-48b7-b636-520bff96c2dc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 236.3414 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -3927,12 +4056,14 @@
 		(uuid "0c686f56-6743-406b-bbf3-1efa3292fbf5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 198.12 43.3014 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -3949,12 +4080,14 @@
 		(uuid "0d0babaa-923c-40f0-82f1-ab04fd683886")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 207.5372 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -3971,12 +4104,14 @@
 		(uuid "0fe9fde6-13ed-40f4-ae4f-8f96183b5eb8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 119.8128 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -3993,12 +4128,14 @@
 		(uuid "141c742b-a485-4658-8207-8fb6844b4073")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 119.8128 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -4015,12 +4152,14 @@
 		(uuid "1563569b-771f-4038-8b7d-bc48ce062a6f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 254.4328 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -4037,12 +4176,14 @@
 		(uuid "17917b55-6607-44b7-b597-2bdacf514b62")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 272.4829 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -4059,12 +4200,14 @@
 		(uuid "1b26dec1-fa08-4f48-b51c-51fddbafe2a9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 195.8386 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -4080,11 +4223,13 @@
 		(uuid "24375619-9350-4d4c-b689-9b222de5a863")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 95.25 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -4100,11 +4245,13 @@
 		(uuid "24d63e39-9850-485c-b3b9-d9fd00c81c0b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 267.97 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -4120,11 +4267,13 @@
 		(uuid "260ff3f2-3677-4bc5-a1d6-1af7c280ab04")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 144.78 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -4140,11 +4289,13 @@
 		(uuid "26ecdcd9-4c2e-42d5-a426-4d069d924d27")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 267.97 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -4160,11 +4311,13 @@
 		(uuid "28f0f100-b705-4074-a635-ccd2d10094f6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 144.78 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -4181,12 +4334,14 @@
 		(uuid "290495eb-f402-4b8d-9b14-26af6cd5eeaa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 272.7199 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -4203,12 +4358,14 @@
 		(uuid "2ad4d7ed-e323-4de8-ba42-42ddd6f0ee89")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 52.1914 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -4225,12 +4382,14 @@
 		(uuid "2f79e191-56aa-4b1d-8414-863e84e09137")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 143.6314 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -4247,12 +4406,14 @@
 		(uuid "31cdeb4a-157d-4386-8f12-33c92120d8ea")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 20.8871 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -4269,12 +4430,14 @@
 		(uuid "323cf45e-abfc-4082-a39f-2c2fc9d942ff")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 186.8114 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -4291,12 +4454,14 @@
 		(uuid "3ccf4903-4ac9-445f-b940-22f1a3f32e28")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 206.7514 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -4313,12 +4478,14 @@
 		(uuid "47c439b1-f5dd-489c-81b2-b68cb7a1b461")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 109.4786 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -4335,12 +4502,14 @@
 		(uuid "499ae6e5-543d-49d2-97e2-b5bea0dcd44f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 160.65 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -4356,11 +4525,13 @@
 		(uuid "5356577c-47c5-47a0-9637-772ed520fa9d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 144.78 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -4376,11 +4547,13 @@
 		(uuid "546b6590-ad10-4079-9b44-0cc4152b959a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 144.78 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -4396,11 +4569,13 @@
 		(uuid "5b4ba2c2-6893-431e-aebd-cde7d06ecf7e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 175.26 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -4417,12 +4592,14 @@
 		(uuid "5b64cfed-c56c-4024-87cc-e642fd3e3501")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 198.9572 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -4439,12 +4616,14 @@
 		(uuid "60b44742-b0b4-4d44-b9e4-eeb81dbd5306")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 106.0476 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -4461,12 +4640,14 @@
 		(uuid "66974135-e500-4864-97d8-25c01bffb349")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 195.8386 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -4483,12 +4664,14 @@
 		(uuid "684edc2b-78bb-488a-bff7-9c56e35cc6e6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 114.8272 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -4505,12 +4688,14 @@
 		(uuid "69ad8f6d-d358-4762-aa83-e6fefe84dad0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 108.6928 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -4527,12 +4712,14 @@
 		(uuid "6a09b82d-42c6-4102-b051-5b9fa96f0bd4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 272.4829 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -4549,12 +4736,14 @@
 		(uuid "707088db-9660-49ec-a44e-0c9eec0beecd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 114.0414 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -4571,12 +4760,14 @@
 		(uuid "73a0bf7c-192a-400b-8c18-ad34f6f9fef2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 194.31 41.1815 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -4593,12 +4784,14 @@
 		(uuid "75257428-07ae-4d48-93ac-74dfa8b887ab")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 155.5071 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -4615,12 +4808,14 @@
 		(uuid "772c2130-3e7a-4961-81bc-28b250ae1ae8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 106.7129 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -4637,12 +4832,14 @@
 		(uuid "7b913f56-b354-42c3-a05a-607fee62d702")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 32.2772 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -4658,11 +4855,13 @@
 		(uuid "7f0d8e55-e763-4dc9-86e8-e617097daeb0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 144.78 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -4678,11 +4877,13 @@
 		(uuid "8072e45d-ef10-4a4a-accf-2ce276c6c42f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 58.42 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -4698,11 +4899,13 @@
 		(uuid "85ada674-42ae-4a60-95ca-76f016713912")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 175.26 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -4719,12 +4922,14 @@
 		(uuid "8b920d33-d0ba-426f-8010-b3c7bdd603bc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 20.8871 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -4741,12 +4946,14 @@
 		(uuid "8cd22ffc-b5f0-471b-ad4c-7a068f2d91a4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 123.19 40.7614 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -4762,11 +4969,13 @@
 		(uuid "910821b4-3a86-4d0d-82a8-57885b1ab1ca")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 92.71 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -4783,12 +4992,14 @@
 		(uuid "9426a266-93c2-4737-8192-9925982b4958")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 114.0414 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -4805,12 +5016,14 @@
 		(uuid "9458b35c-6979-48a4-8390-f4f8dfa5088a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 119.8128 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -4827,12 +5040,14 @@
 		(uuid "9678fde9-b215-4636-a75c-4b53ebcfb830")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 32.2772 232.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -4848,11 +5063,13 @@
 		(uuid "974379e7-e965-4616-82c9-0839893c3d58")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 58.42 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -4869,12 +5086,14 @@
 		(uuid "989f8c50-e023-4c53-abab-fdceb1abdaf4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 269.24 43.7215 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -4890,11 +5109,13 @@
 		(uuid "9994b6d5-a33c-4876-b276-f63bae021ace")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 58.42 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -4911,12 +5132,14 @@
 		(uuid "9b1f00dd-43e0-46f0-9527-ae2953c235a8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 20.8871 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -4933,12 +5156,14 @@
 		(uuid "a166de9b-4877-46bf-be07-c35b7ca5d4ae")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 26.03 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -4955,12 +5180,14 @@
 		(uuid "a2b32823-5aa8-4867-bcb4-bfa346b6b805")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 272.4829 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -4977,12 +5204,14 @@
 		(uuid "a302c29a-a56a-4db8-b7e7-19d350578868")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 272.4829 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -4999,12 +5228,14 @@
 		(uuid "a3469b5a-071c-48f1-9cdb-7cd14d88f753")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 31.4914 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -5021,12 +5252,14 @@
 		(uuid "a413c58f-6973-442b-8d85-32868fb980f4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 198.9572 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -5043,12 +5276,14 @@
 		(uuid "ad692be7-ad65-46e6-b213-2cf6868f57d4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 195.0528 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -5064,11 +5299,13 @@
 		(uuid "aef7647f-afad-405a-b56a-f1a0e60ae086")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 58.42 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -5085,12 +5322,14 @@
 		(uuid "aefe5ed1-ee8d-4e27-a8cc-921449e66a73")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 198.9572 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -5107,12 +5346,14 @@
 		(uuid "aff6c7f9-4317-4133-80be-8ca7c7987b26")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 33.02 40.7614 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -5129,12 +5370,14 @@
 		(uuid "b240973e-b28b-4e06-abc2-add4f0127848")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 206.7514 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -5151,12 +5394,14 @@
 		(uuid "b4bb1620-8e8d-44a9-93b1-9131e7117d18")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 61.0814 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -5172,11 +5417,13 @@
 		(uuid "b745d1cc-8d5a-41c2-908b-9dc765381919")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 267.97 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -5193,12 +5440,14 @@
 		(uuid "b9b4609e-206d-48e5-9de7-57790e71586d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 254.4328 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -5214,11 +5463,13 @@
 		(uuid "bbf9382e-a3b7-43b9-9ca5-72527f6638c5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 92.71 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -5234,11 +5485,13 @@
 		(uuid "bd02af04-91d0-4e45-be93-219c27c2ed5f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 175.26 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -5255,12 +5508,14 @@
 		(uuid "bec3d5ec-47b2-4bbd-8dd3-652e7d45e9a0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 106.7129 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -5277,12 +5532,14 @@
 		(uuid "c1aedb29-74ad-4c46-b685-0b9607ad788d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 155.5071 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -5298,11 +5555,13 @@
 		(uuid "ca721b4f-ced9-4c31-91b0-bd3c14382292")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 144.78 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -5319,12 +5578,14 @@
 		(uuid "cc11b1ca-c30a-450d-8527-6a1fbd605171")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 31.4914 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -5341,12 +5602,14 @@
 		(uuid "cc789608-1d83-462d-8960-3e51b1bedbdd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 114.8272 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -5363,12 +5626,14 @@
 		(uuid "cd75c56e-9fca-42c3-90ce-774a0aa4645f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 198.9572 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -5385,12 +5650,14 @@
 		(uuid "ce17a78b-5aa9-46b5-b027-d88c02cd7099")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 119.8128 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -5407,12 +5674,14 @@
 		(uuid "cebd3b5e-0319-4239-8258-ed6dcc2262ef")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 207.5372 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -5429,12 +5698,14 @@
 		(uuid "cfac5097-7d9d-4d76-a21e-b72ddca544a9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 272.4829 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -5451,12 +5722,14 @@
 		(uuid "d2e09e3c-1dc8-42a9-a70a-5dc53ed2bf5e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 198.9572 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -5473,12 +5746,14 @@
 		(uuid "d44c2ad9-b941-44a2-8264-68bde89a4552")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 101.6 41.1815 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -5495,12 +5770,14 @@
 		(uuid "d5d5d7fe-5ce0-48b8-821c-8173bac7176d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 20.8871 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -5516,11 +5793,13 @@
 		(uuid "d6ecc7d5-9869-4d14-a991-408558609219")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 58.42 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -5537,12 +5816,14 @@
 		(uuid "dce42b89-735c-4e75-b7ab-69a425155542")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 195.0528 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -5559,12 +5840,14 @@
 		(uuid "e60c07ab-6b6e-47da-a101-c1937c3d82d4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 195.8386 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -5580,11 +5863,13 @@
 		(uuid "eae53c22-63ac-4dde-b37d-6fc76dc8f347")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 92.71 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -5600,11 +5885,13 @@
 		(uuid "eecfb4e7-a652-43ca-9ea6-5f071abaffb7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 181.61 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 	)
@@ -5621,12 +5908,14 @@
 		(uuid "eed6bfca-9128-4db7-af12-6c3a88f97ea1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 272.4829 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -5643,12 +5932,14 @@
 		(uuid "f3c7d4a2-03d3-4216-b01e-76748e9d70bd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 195.0528 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -5665,12 +5956,14 @@
 		(uuid "fcc7b33b-f421-4db0-a17d-3ad84f5dfe37")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 106.0476 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -5678,13 +5971,17 @@
 		(lib_id "Device:C_Small")
 		(at 210.82 158.75 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-0000627b49c6")
 		(property "Reference" "C3"
 			(at 211.455 156.845 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5694,6 +5991,8 @@
 		)
 		(property "Value" "100nF 16V"
 			(at 210.82 160.655 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5703,47 +6002,57 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Wbry"
 			(at 210.82 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 210.82 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 210.82 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "GRM155R71C104KA88D"
 			(at 210.82 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C71629"
 			(at 210.82 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5753,7 +6062,7 @@
 			(uuid "4661eb74-bfbf-4eb4-b713-f888e48fab05")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "C3")
 					(unit 1)
@@ -5766,61 +6075,73 @@
 		(lib_id "Duet3:GND")
 		(at 76.2 161.29 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000066411315")
 		(property "Reference" "#PWR04"
 			(at 76.2 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 76.2 163.068 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 76.2 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 76.2 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 76.2 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "14c42957-c1b5-4c84-82c5-70ea271786af")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "#PWR04")
 					(unit 1)
@@ -5832,13 +6153,17 @@
 		(lib_id "Device:C_Small")
 		(at 76.2 158.75 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000066411320")
 		(property "Reference" "C2"
 			(at 76.835 156.845 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5848,6 +6173,8 @@
 		)
 		(property "Value" "100nF 16V"
 			(at 76.2 160.655 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5857,47 +6184,57 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Wbry"
 			(at 76.2 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 76.2 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 76.2 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "GRM155R71C104KA88D"
 			(at 76.2 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C71629"
 			(at 76.2 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5907,7 +6244,7 @@
 			(uuid "c423a343-2ddb-4623-bb67-fea63e504aa6")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "C2")
 					(unit 1)
@@ -5920,61 +6257,73 @@
 		(lib_id "Duet3:GND")
 		(at 64.77 205.74 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000066442aa4")
 		(property "Reference" "#PWR01"
 			(at 64.77 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 64.77 207.518 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 64.77 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 64.77 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 64.77 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "ffc28cc6-1e8e-40ea-9423-04773b3a18b7")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "#PWR01")
 					(unit 1)
@@ -5987,61 +6336,73 @@
 		(lib_id "Duet3:GND")
 		(at 199.39 205.74 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-0000664676ac")
 		(property "Reference" "#PWR05"
 			(at 199.39 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 199.39 207.518 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 199.39 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 199.39 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 199.39 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "0e9a186c-872d-4c11-882c-43e744af372d")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "#PWR05")
 					(unit 1)
@@ -6054,61 +6415,73 @@
 		(lib_id "Duet3:GND")
 		(at 210.82 161.29 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00006647a360")
 		(property "Reference" "#PWR07"
 			(at 210.82 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 210.82 163.068 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 210.82 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 210.82 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 210.82 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "01576134-865f-43bd-8adb-b1d404f195e3")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "#PWR07")
 					(unit 1)
@@ -6121,54 +6494,66 @@
 		(lib_id "Duet3:GND")
 		(at 219.71 55.88 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "06f2c8ff-b8f2-4f7d-bed0-e2b03a387891")
 		(property "Reference" "#PWR072"
 			(at 219.71 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 217.932 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 219.71 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 219.71 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 219.71 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6188,54 +6573,66 @@
 		(lib_id "Duet3:GND")
 		(at 58.42 53.34 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "205188a6-8ea2-4089-a13d-d6d9c351f559")
 		(property "Reference" "#PWR053"
 			(at 58.42 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 56.642 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 58.42 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 58.42 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 58.42 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6254,13 +6651,17 @@
 		(lib_id "Device:C_Small")
 		(at 96.52 48.26 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "2fb6618f-2b00-4449-95f9-91885d82757d")
 		(property "Reference" "C31"
 			(at 95.885 50.165 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6270,6 +6671,8 @@
 		)
 		(property "Value" "100nF 16V"
 			(at 96.52 46.355 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6279,47 +6682,57 @@
 		)
 		(property "Footprint" "3DPotter:0402_1005Metric_NoSilk"
 			(at 96.52 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 96.52 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 96.52 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "GRM155R71C104KA88D"
 			(at 96.52 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C71629"
 			(at 96.52 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6341,14 +6754,18 @@
 		(lib_id "3DPotter:SN74F125DR")
 		(at 199.39 179.07 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "35738fc6-524d-43f0-a20d-258611fee4f4")
 		(property "Reference" "U2"
 			(at 201.7079 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6358,6 +6775,7 @@
 		)
 		(property "Value" "SN74F125DR"
 			(at 200.025 179.705 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -6367,56 +6785,68 @@
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 199.39 155.0162 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/sn74f125.pdf"
 			(at 199.39 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 199.39 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Field4" ""
 			(at 199.39 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "SN74F125DR"
 			(at 199.39 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C2675540"
 			(at 199.39 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "8"
@@ -6462,7 +6892,7 @@
 			(uuid "04a0a6c5-3406-4065-9b33-8a1fa49f79d6")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "U2")
 					(unit 1)
@@ -6474,13 +6904,17 @@
 		(lib_id "Device:C_Small")
 		(at 143.51 48.26 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "39b92e15-8bb4-4ebc-af2a-7a4d2d8d93e9")
 		(property "Reference" "C32"
 			(at 142.875 50.165 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6490,6 +6924,8 @@
 		)
 		(property "Value" "100nF 16V"
 			(at 143.51 46.355 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6499,47 +6935,57 @@
 		)
 		(property "Footprint" "3DPotter:0402_1005Metric_NoSilk"
 			(at 143.51 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 143.51 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 143.51 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "GRM155R71C104KA88D"
 			(at 143.51 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C71629"
 			(at 143.51 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6562,54 +7008,66 @@
 		(lib_id "Duet3:GND")
 		(at 144.78 83.82 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "3b180a00-edbe-4821-b032-1d4c0418b478")
 		(property "Reference" "#PWR032"
 			(at 144.78 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 144.78 85.598 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 144.78 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 144.78 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 144.78 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6629,54 +7087,66 @@
 		(lib_id "Duet3:GND")
 		(at 252.73 86.36 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "3ba580e1-5906-4b97-bb9c-80a0054fa216")
 		(property "Reference" "#PWR035"
 			(at 252.73 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 252.73 88.138 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 252.73 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 252.73 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 252.73 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6695,13 +7165,17 @@
 		(lib_id "Device:R_Small")
 		(at 88.9 172.72 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "3e37b78c-b7a3-41ba-bfb5-31e5944e3182")
 		(property "Reference" "R10"
 			(at 92.71 173.99 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6710,6 +7184,8 @@
 		)
 		(property "Value" "100K"
 			(at 87.63 170.18 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6718,47 +7194,57 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 88.9 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 88.9 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 88.9 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "AC0402FR-07100KL"
 			(at 88.9 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C144809"
 			(at 88.9 172.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6780,13 +7266,17 @@
 		(lib_id "Device:R_Small")
 		(at 223.52 172.72 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "4487a464-0091-4620-b885-8b8b190d3eac")
 		(property "Reference" "R36"
 			(at 227.33 173.99 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6795,6 +7285,8 @@
 		)
 		(property "Value" "100K"
 			(at 222.25 170.18 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6803,47 +7295,57 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 223.52 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 223.52 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 223.52 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "AC0402FR-07100KL"
 			(at 223.52 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C144809"
 			(at 223.52 172.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6866,54 +7368,66 @@
 		(lib_id "Duet3:GND")
 		(at 189.23 45.72 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "4fa5e03d-6bad-4646-909b-e351d5042f46")
 		(property "Reference" "#PWR092"
 			(at 189.23 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 189.23 43.942 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 189.23 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 189.23 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 189.23 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6932,13 +7446,17 @@
 		(lib_id "Device:R_Small")
 		(at 88.9 180.34 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "51ab5339-e3ac-4ef7-8897-6193d4db3a99")
 		(property "Reference" "R24"
 			(at 92.71 181.61 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6947,6 +7465,8 @@
 		)
 		(property "Value" "100K"
 			(at 87.63 177.8 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6955,47 +7475,57 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 88.9 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 88.9 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 88.9 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "AC0402FR-07100KL"
 			(at 88.9 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C144809"
 			(at 88.9 180.34 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7018,54 +7548,66 @@
 		(lib_id "Duet3:GND")
 		(at 261.62 48.26 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "5907c639-5029-4594-950f-cba9733be798")
 		(property "Reference" "#PWR097"
 			(at 261.62 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 261.62 46.482 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 261.62 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 261.62 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 261.62 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7084,13 +7626,17 @@
 		(lib_id "Device:R_Small")
 		(at 130.81 48.26 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "5993a4c0-375e-42e7-8427-66ab75ecd7c1")
 		(property "Reference" "R72"
 			(at 127 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7099,6 +7645,8 @@
 		)
 		(property "Value" "47K"
 			(at 127 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7107,47 +7655,57 @@
 		)
 		(property "Footprint" "3DPotter:0402_1005Metric_NoSilk"
 			(at 130.81 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 130.81 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 130.81 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "AC0402FR-0747KL"
 			(at 130.81 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C144757"
 			(at 130.81 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7170,54 +7728,66 @@
 		(lib_id "Duet3:GND")
 		(at 177.8 83.82 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "602321ee-12e8-4d40-9518-29c7fecb806c")
 		(property "Reference" "#PWR034"
 			(at 177.8 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 177.8 85.598 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 177.8 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 177.8 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 177.8 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7237,54 +7807,66 @@
 		(lib_id "Duet3:GND")
 		(at 215.9 48.26 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "62a1ccba-55e8-4cc7-8601-39ce6cb42e6e")
 		(property "Reference" "#PWR096"
 			(at 215.9 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 215.9 46.482 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 215.9 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 215.9 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 215.9 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7303,13 +7885,17 @@
 		(lib_id "Device:R_Small")
 		(at 223.52 180.34 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "62f459e4-7fed-4207-a751-fae974639899")
 		(property "Reference" "R37"
 			(at 227.33 181.61 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7318,6 +7904,8 @@
 		)
 		(property "Value" "100K"
 			(at 222.25 177.8 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7326,47 +7914,57 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 223.52 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 223.52 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 223.52 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "AC0402FR-07100KL"
 			(at 223.52 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C144809"
 			(at 223.52 180.34 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7389,61 +7987,73 @@
 		(lib_id "Duet3:GND")
 		(at 156.21 265.43 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "69540f5d-2677-47de-98bb-d72e3f8fa0f6")
 		(property "Reference" "#PWR03"
 			(at 156.21 265.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 156.21 267.208 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 156.21 265.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 156.21 265.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 156.21 265.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "b7cee6da-4354-4e6c-968b-8c5336969179")
 		)
 		(instances
-			(project "Duet3_MB_6XD"
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "#PWR03")
 					(unit 1)
@@ -7455,13 +8065,17 @@
 		(lib_id "Device:C_Small")
 		(at 55.88 48.26 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "7b5ec1fa-e52b-4a59-952b-9dabe2f2e192")
 		(property "Reference" "C30"
 			(at 55.245 50.165 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7471,6 +8085,8 @@
 		)
 		(property "Value" "100nF 16V"
 			(at 55.88 46.355 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7480,47 +8096,57 @@
 		)
 		(property "Footprint" "3DPotter:0402_1005Metric_NoSilk"
 			(at 55.88 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 55.88 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 55.88 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "GRM155R71C104KA88D"
 			(at 55.88 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C71629"
 			(at 55.88 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7542,13 +8168,17 @@
 		(lib_id "Device:R_Small")
 		(at 88.9 189.23 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "841b4dae-1e16-44f2-bd42-f64fb3c1327b")
 		(property "Reference" "R25"
 			(at 92.71 190.5 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7557,6 +8187,8 @@
 		)
 		(property "Value" "100K"
 			(at 87.63 186.69 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7565,47 +8197,57 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 88.9 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 88.9 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 88.9 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "AC0402FR-07100KL"
 			(at 88.9 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C144809"
 			(at 88.9 189.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7628,61 +8270,73 @@
 		(lib_id "Duet3:GND")
 		(at 248.92 267.97 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "856a2ad0-a336-458a-8c32-978136d7a301")
 		(property "Reference" "#PWR020"
 			(at 248.92 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 248.92 269.748 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 248.92 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 248.92 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 248.92 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "36ddc495-60fb-4d26-ab4a-f13b4730859b")
 		)
 		(instances
-			(project "Duet3_MB_6XD"
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "#PWR020")
 					(unit 1)
@@ -7694,14 +8348,18 @@
 		(lib_id "3DPotter:SN74F125DR")
 		(at 248.92 241.3 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "85a8e7e7-7092-4b9c-a75d-48d3d77ad987")
 		(property "Reference" "U22"
 			(at 251.2379 224.79 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7711,6 +8369,7 @@
 		)
 		(property "Value" "SN74F125DR"
 			(at 249.555 241.935 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -7720,56 +8379,68 @@
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 248.92 217.2462 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/sn74f125.pdf"
 			(at 248.92 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 248.92 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Field4" ""
 			(at 248.92 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "SN74F125DR"
 			(at 248.92 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C2675540"
 			(at 248.92 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "8"
@@ -7815,7 +8486,7 @@
 			(uuid "aa044f57-15b9-4ea0-84d5-cae84fe21ec3")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "U22")
 					(unit 1)
@@ -7827,13 +8498,17 @@
 		(lib_id "Device:C_Small")
 		(at 189.23 48.26 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "934681ef-2421-4efc-9385-d8cf255b6792")
 		(property "Reference" "C33"
 			(at 188.595 50.165 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7843,6 +8518,8 @@
 		)
 		(property "Value" "100nF 16V"
 			(at 189.23 46.355 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7852,47 +8529,57 @@
 		)
 		(property "Footprint" "3DPotter:0402_1005Metric_NoSilk"
 			(at 189.23 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 189.23 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 189.23 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "GRM155R71C104KA88D"
 			(at 189.23 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C71629"
 			(at 189.23 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7914,14 +8601,18 @@
 		(lib_id "3DPotter:SN74LVC4245APW")
 		(at 161.29 64.77 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94f61cf7-e031-4a7f-9ac5-50b0d80c9b4b")
 		(property "Reference" "U26"
 			(at 161.29 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7930,6 +8621,8 @@
 		)
 		(property "Value" "SN74LVC4245APWR"
 			(at 161.29 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7938,49 +8631,59 @@
 		)
 		(property "Footprint" "3DPotter:PW24"
 			(at 129.54 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/gpn/sn74lvc4245a"
 			(at 129.54 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 161.29 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "RotOffset" "270"
 			(at 161.29 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C7859"
 			(at 161.29 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "10"
@@ -8056,7 +8759,7 @@
 			(uuid "7e50d51d-5f3b-4f49-8345-d07b6db4a9e9")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "U26")
 					(unit 1)
@@ -8069,61 +8772,73 @@
 		(lib_id "Duet3:GND")
 		(at 85.09 222.25 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "9a1c4213-9c92-41ce-a44d-e895633a5c99")
 		(property "Reference" "#PWR019"
 			(at 85.09 222.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 85.09 224.028 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 85.09 222.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 85.09 222.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 85.09 222.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "1e15fbb3-c5c7-4241-8168-239881eeeb2b")
 		)
 		(instances
-			(project "Duet3_MB_6XD"
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "#PWR019")
 					(unit 1)
@@ -8136,61 +8851,73 @@
 		(lib_id "Duet3:GND")
 		(at 260.35 223.52 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "9a9386ba-f77b-4898-a535-92fba179017a")
 		(property "Reference" "#PWR021"
 			(at 260.35 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 260.35 225.298 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 260.35 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 260.35 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 260.35 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "b77b785b-3dfc-4d71-b0ab-85bf3c3cda51")
 		)
 		(instances
-			(project "Duet3_MB_6XD"
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "#PWR021")
 					(unit 1)
@@ -8203,54 +8930,66 @@
 		(lib_id "Duet3:GND")
 		(at 91.44 83.82 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "a37d86da-0bf7-4e5a-b5c9-1ef9e5f3963d")
 		(property "Reference" "#PWR043"
 			(at 91.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 91.44 85.598 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 91.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 91.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 91.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8269,13 +9008,17 @@
 		(lib_id "Device:C_Small")
 		(at 167.64 218.44 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "a74c7250-9571-470e-b8dd-578e8cbbe15f")
 		(property "Reference" "C18"
 			(at 168.275 216.535 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8285,6 +9028,8 @@
 		)
 		(property "Value" "100nF 16V"
 			(at 167.64 220.345 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8294,47 +9039,57 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 167.64 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 167.64 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 167.64 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "GRM155R71C104KA88D"
 			(at 167.64 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C71629"
 			(at 167.64 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8344,7 +9099,7 @@
 			(uuid "103759e0-c815-4c8f-9ea0-e574c3e03d6c")
 		)
 		(instances
-			(project "Duet3_MB_6XD"
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "C18")
 					(unit 1)
@@ -8357,54 +9112,66 @@
 		(lib_id "Duet3:GND")
 		(at 219.71 86.36 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "a7af122b-5787-479a-a234-c1a60e82c7d8")
 		(property "Reference" "#PWR027"
 			(at 219.71 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 219.71 88.138 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 219.71 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 219.71 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 219.71 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8423,14 +9190,18 @@
 		(lib_id "3DPotter:SN74F125DR")
 		(at 64.77 179.07 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "a99d7cea-f6fc-41e8-bee0-5c348d0d580c")
 		(property "Reference" "U1"
 			(at 67.0879 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8440,6 +9211,7 @@
 		)
 		(property "Value" "SN74F125DR"
 			(at 65.405 179.705 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -8449,56 +9221,68 @@
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 64.77 155.0162 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/sn74f125.pdf"
 			(at 64.77 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 64.77 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Field4" ""
 			(at 64.77 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "SN74F125DR"
 			(at 64.77 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C2675540"
 			(at 64.77 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "12"
@@ -8544,7 +9328,7 @@
 			(uuid "c9d36898-6989-4628-932b-6d240209a9ab")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "U1")
 					(unit 1)
@@ -8556,13 +9340,17 @@
 		(lib_id "Device:R_Small")
 		(at 204.47 50.8 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "aa4ce7d9-92ea-4e19-9eb6-eb873878d834")
 		(property "Reference" "R73"
 			(at 200.66 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8571,6 +9359,8 @@
 		)
 		(property "Value" "47K"
 			(at 200.66 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8579,47 +9369,57 @@
 		)
 		(property "Footprint" "3DPotter:0402_1005Metric_NoSilk"
 			(at 204.47 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 204.47 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 204.47 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "AC0402FR-0747KL"
 			(at 204.47 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C144757"
 			(at 204.47 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8641,14 +9441,18 @@
 		(lib_id "3DPotter:SN74LVC4245APW")
 		(at 74.93 64.77 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aba7197b-70f2-4d36-909c-d62d9e952734")
 		(property "Reference" "U14"
 			(at 74.93 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8657,6 +9461,8 @@
 		)
 		(property "Value" "SN74LVC4245APWR"
 			(at 74.93 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8665,49 +9471,59 @@
 		)
 		(property "Footprint" "3DPotter:PW24"
 			(at 43.18 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/gpn/sn74lvc4245a"
 			(at 43.18 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 74.93 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "RotOffset" "270"
 			(at 74.93 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C7859"
 			(at 74.93 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -8783,7 +9599,7 @@
 			(uuid "f6fa3c33-5e63-424f-968e-f6b776607b76")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "U14")
 					(unit 1)
@@ -8796,61 +9612,73 @@
 		(lib_id "Duet3:GND")
 		(at 73.66 266.7 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "b3650cb3-4e55-41e1-8156-a24ebab29b46")
 		(property "Reference" "#PWR018"
 			(at 73.66 266.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 73.66 268.478 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 73.66 266.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 73.66 266.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 73.66 266.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "81e93635-a0b7-40af-9be7-ed0e4aa440f7")
 		)
 		(instances
-			(project "Duet3_MB_6XD"
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "#PWR018")
 					(unit 1)
@@ -8862,14 +9690,18 @@
 		(lib_id "3DPotter:SN74F125DR")
 		(at 73.66 240.03 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "b995e482-3e02-4868-9b08-ea2e18e85e0a")
 		(property "Reference" "U6"
 			(at 75.9779 223.52 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8879,6 +9711,7 @@
 		)
 		(property "Value" "SN74F125DR"
 			(at 74.295 240.665 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -8888,56 +9721,68 @@
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 73.66 215.9762 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/sn74f125.pdf"
 			(at 73.66 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 73.66 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Field4" ""
 			(at 73.66 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "SN74F125DR"
 			(at 73.66 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C2675540"
 			(at 73.66 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "11"
@@ -8983,7 +9828,7 @@
 			(uuid "deb90c97-27a7-499b-85b4-d1caf7d1c80d")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "U6")
 					(unit 1)
@@ -8996,54 +9841,66 @@
 		(lib_id "Duet3:GND")
 		(at 55.88 45.72 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "ba3a848a-04c0-4e3b-8553-cb2d11e0a71a")
 		(property "Reference" "#PWR073"
 			(at 55.88 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 55.88 43.942 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 55.88 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 55.88 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 55.88 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9063,54 +9920,66 @@
 		(lib_id "Duet3:GND")
 		(at 58.42 83.82 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "bf1db430-15e5-45d7-beb1-e5e4fd504c96")
 		(property "Reference" "#PWR025"
 			(at 58.42 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 58.42 85.598 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 58.42 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 58.42 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 58.42 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9130,54 +9999,66 @@
 		(lib_id "Duet3:GND")
 		(at 96.52 45.72 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "c9274bf9-a323-4ed4-8d6d-52b9178e6c0c")
 		(property "Reference" "#PWR074"
 			(at 96.52 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 96.52 43.942 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 96.52 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 96.52 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 96.52 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9196,13 +10077,17 @@
 		(lib_id "Device:C_Small")
 		(at 85.09 219.71 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "ceddc13e-616f-490e-82e7-7c897b8f06e8")
 		(property "Reference" "C19"
 			(at 85.725 217.805 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9212,6 +10097,8 @@
 		)
 		(property "Value" "100nF 16V"
 			(at 85.09 221.615 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9221,47 +10108,57 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 85.09 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 85.09 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 85.09 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "GRM155R71C104KA88D"
 			(at 85.09 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C71629"
 			(at 85.09 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9271,7 +10168,7 @@
 			(uuid "1c3b9223-e395-4ba9-8701-fb48fecf8032")
 		)
 		(instances
-			(project "Duet3_MB_6XD"
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "C19")
 					(unit 1)
@@ -9283,14 +10180,18 @@
 		(lib_id "3DPotter:SN74F125DR")
 		(at 156.21 238.76 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "d40be729-d029-472e-b6d2-a78b5d469079")
 		(property "Reference" "U21"
 			(at 158.5279 222.25 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9300,6 +10201,7 @@
 		)
 		(property "Value" "SN74F125DR"
 			(at 156.845 239.395 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -9309,56 +10211,68 @@
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 156.21 214.7062 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/sn74f125.pdf"
 			(at 156.21 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 156.21 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Field4" ""
 			(at 156.21 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "SN74F125DR"
 			(at 156.21 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C2675540"
 			(at 156.21 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "9"
@@ -9404,7 +10318,7 @@
 			(uuid "c1327295-d455-4f32-99f1-82f7a82be4c3")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "U21")
 					(unit 1)
@@ -9416,13 +10330,17 @@
 		(lib_id "Device:C_Small")
 		(at 260.35 220.98 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "e20145a1-6bda-4a97-a828-645850d06320")
 		(property "Reference" "C20"
 			(at 260.985 219.075 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9432,6 +10350,8 @@
 		)
 		(property "Value" "100nF 16V"
 			(at 260.35 222.885 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9441,47 +10361,57 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 260.35 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 260.35 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 260.35 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "GRM155R71C104KA88D"
 			(at 260.35 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C71629"
 			(at 260.35 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9491,7 +10421,7 @@
 			(uuid "35255a4f-75d1-4bf6-bf27-0dbfe03ffaba")
 		)
 		(instances
-			(project "Duet3_MB_6XD"
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "C20")
 					(unit 1)
@@ -9503,13 +10433,17 @@
 		(lib_id "Device:R_Small")
 		(at 43.18 48.26 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "e373e627-8229-4e7f-a53d-86489475c56f")
 		(property "Reference" "R65"
 			(at 39.37 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9518,6 +10452,8 @@
 		)
 		(property "Value" "47K"
 			(at 39.37 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9526,47 +10462,57 @@
 		)
 		(property "Footprint" "3DPotter:0402_1005Metric_NoSilk"
 			(at 43.18 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 43.18 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 43.18 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "AC0402FR-0747KL"
 			(at 43.18 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C144757"
 			(at 43.18 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9588,13 +10534,17 @@
 		(lib_id "Device:C_Small")
 		(at 261.62 50.8 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "e6e20d5a-d83b-472f-bd65-095f39ff4dba")
 		(property "Reference" "C35"
 			(at 260.985 52.705 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9604,6 +10554,8 @@
 		)
 		(property "Value" "100nF 16V"
 			(at 261.62 48.895 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9613,47 +10565,57 @@
 		)
 		(property "Footprint" "3DPotter:0402_1005Metric_NoSilk"
 			(at 261.62 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 261.62 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 261.62 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "GRM155R71C104KA88D"
 			(at 261.62 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C71629"
 			(at 261.62 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9675,13 +10637,17 @@
 		(lib_id "Device:R_Small")
 		(at 88.9 196.85 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "e709179b-5469-434f-8f69-7eceaa9e81e8")
 		(property "Reference" "R26"
 			(at 92.71 198.12 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9690,6 +10656,8 @@
 		)
 		(property "Value" "100K"
 			(at 87.63 194.31 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9698,47 +10666,57 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 88.9 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 88.9 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 88.9 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "AC0402FR-07100KL"
 			(at 88.9 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C144809"
 			(at 88.9 196.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9761,61 +10739,73 @@
 		(lib_id "Duet3:GND")
 		(at 167.64 220.98 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "e70924ff-0495-4cf5-b486-b83718fb6db9")
 		(property "Reference" "#PWR017"
 			(at 167.64 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 167.64 222.758 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 167.64 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 167.64 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 167.64 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "a07e1d8a-c863-4835-ab1f-f1b0c11ed227")
 		)
 		(instances
-			(project "Duet3_MB_6XD"
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "#PWR017")
 					(unit 1)
@@ -9828,54 +10818,66 @@
 		(lib_id "Duet3:GND")
 		(at 143.51 45.72 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "eeeabd80-5976-4a21-bd24-dfe2698fdcef")
 		(property "Reference" "#PWR075"
 			(at 143.51 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 143.51 43.942 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 143.51 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 143.51 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 143.51 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9894,13 +10896,17 @@
 		(lib_id "Device:C_Small")
 		(at 215.9 50.8 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "eff79e27-9c85-46af-892b-8422168e607a")
 		(property "Reference" "C34"
 			(at 215.265 52.705 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9910,6 +10916,8 @@
 		)
 		(property "Value" "100nF 16V"
 			(at 215.9 48.895 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9919,47 +10927,57 @@
 		)
 		(property "Footprint" "3DPotter:0402_1005Metric_NoSilk"
 			(at 215.9 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 215.9 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 215.9 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "GRM155R71C104KA88D"
 			(at 215.9 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C71629"
 			(at 215.9 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9982,54 +11000,66 @@
 		(lib_id "Duet3:GND")
 		(at 144.78 53.34 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "f6377df2-d272-4cb2-a0d6-54f93b9dcc3d")
 		(property "Reference" "#PWR069"
 			(at 144.78 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 143.002 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 144.78 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 144.78 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 144.78 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10048,14 +11078,18 @@
 		(lib_id "3DPotter:SN74LVC4245APW")
 		(at 236.22 67.31 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd1ffc69-1abd-4886-9126-75cbd38209aa")
 		(property "Reference" "U25"
 			(at 236.22 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10064,6 +11098,8 @@
 		)
 		(property "Value" "SN74LVC4245APWR"
 			(at 236.22 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10072,49 +11108,59 @@
 		)
 		(property "Footprint" "3DPotter:PW24"
 			(at 204.47 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/gpn/sn74lvc4245a"
 			(at 204.47 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 236.22 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "RotOffset" "270"
 			(at 236.22 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C7859"
 			(at 236.22 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "9"
@@ -10190,7 +11236,7 @@
 			(uuid "5a12321d-a57b-49b1-9b29-c1d64258e8a7")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-0000505779e3"
 					(reference "U25")
 					(unit 1)

@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "94813053-1316-4754-9fb4-4dbbf7dc780d")
 	(paper "A3" portrait)
 	(title_block
@@ -124,11 +124,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-000050523307")
 		(property "Sheetname" "Processor"
 			(at 15.24 22.0214 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -138,6 +140,8 @@
 		)
 		(property "Sheetfile" "Processor.kicad_sch"
 			(at 15.24 78.1562 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -166,11 +170,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-0000505779e3")
 		(property "Sheetname" "Stepper Driver & Endstops"
 			(at 105.41 22.0214 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -180,6 +186,8 @@
 		)
 		(property "Sheetfile" "Stepper_Drv.kicad_sch"
 			(at 105.41 78.1562 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -208,11 +216,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-000050577a22")
 		(property "Sheetname" "Power"
 			(at 195.58 84.8864 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -222,6 +232,8 @@
 		)
 		(property "Sheetfile" "Power.kicad_sch"
 			(at 195.58 139.7512 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -249,11 +261,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-000050656780")
 		(property "Sheetname" "Headers"
 			(at 15.24 144.5764 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -263,6 +277,8 @@
 		)
 		(property "Sheetfile" "Headers.kicad_sch"
 			(at 15.24 193.675 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -291,11 +307,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-00005b12c3fc")
 		(property "Sheetname" "MOSFET outputs"
 			(at 15.24 84.2514 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -305,6 +323,8 @@
 		)
 		(property "Sheetfile" "Htr_Fan.kicad_sch"
 			(at 15.24 139.1162 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -332,11 +352,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-00005b64a4e7")
 		(property "Sheetname" "Comms"
 			(at 104.775 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -346,6 +368,8 @@
 		)
 		(property "Sheetfile" "Comms.kicad_sch"
 			(at 105.41 140.3862 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -374,11 +398,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "00000000-0000-0000-0000-00005f4ec372")
 		(property "Sheetname" "IO"
 			(at 195.58 22.0214 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -388,6 +414,8 @@
 		)
 		(property "Sheetfile" "Endstops.kicad_sch"
 			(at 195.58 78.1562 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)

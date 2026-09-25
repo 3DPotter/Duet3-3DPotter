@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "edf359b2-3bb5-44db-88a6-dd4010238387")
 	(paper "A3" portrait)
 	(title_block
@@ -19,8 +19,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at -2.54 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -29,6 +33,8 @@
 			)
 			(property "Value" "74LVC2G34"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -37,47 +43,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Dual Buffer, Low-Voltage CMOS"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "Dual Buffer LVC CMOS"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "SG-* SOT*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "74LVC2G34_0_1"
@@ -91,25 +107,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(pin power_in line
-					(at 0 2.54 90)
-					(length 0)
-					(hide yes)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
 					)
 				)
 				(pin power_in line
@@ -131,12 +128,31 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at 0 2.54 90)
+					(length 0)
+					(hide yes)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
 			)
 			(symbol "74LVC2G34_1_1"
 				(pin input line
 					(at -7.62 0 0)
 					(length 3.81)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -154,7 +170,7 @@
 				(pin output line
 					(at 6.35 0 180)
 					(length 3.81)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -174,7 +190,7 @@
 				(pin input line
 					(at -7.62 0 0)
 					(length 3.81)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -192,7 +208,7 @@
 				(pin output line
 					(at 6.35 0 180)
 					(length 3.81)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -218,8 +234,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
 				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -228,6 +248,8 @@
 			)
 			(property "Value" "Conn_01x03"
 				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -236,47 +258,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "connector"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Connector*:*_1x??_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Conn_01x03_1_1"
@@ -392,8 +424,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "C"
 				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -403,6 +439,8 @@
 			)
 			(property "Value" "C_Small"
 				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -412,47 +450,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "capacitor cap"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "C_Small_0_1"
@@ -485,7 +533,7 @@
 				(pin passive line
 					(at 0 2.54 270)
 					(length 2.032)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -503,7 +551,7 @@
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 2.032)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -532,8 +580,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "D"
 				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -542,6 +594,8 @@
 			)
 			(property "Value" "LED"
 				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -550,47 +604,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Light emitting diode"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "LED diode"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "LED_0_1"
@@ -703,8 +767,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Q"
 				(at 5.08 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -714,6 +782,8 @@
 			)
 			(property "Value" "Q_NMOS_GDS"
 				(at 5.08 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -723,38 +793,46 @@
 			)
 			(property "Footprint" ""
 				(at 5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "N-MOSFET transistor, gate/drain/source"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Q_NMOS_GDS_0_1"
@@ -993,8 +1071,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
 				(at 0.762 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1004,6 +1086,8 @@
 			)
 			(property "Value" "R_Small"
 				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1013,47 +1097,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Resistor, small symbol"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "R resistor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "R_Small_0_1"
@@ -1073,7 +1167,7 @@
 				(pin passive line
 					(at 0 2.54 270)
 					(length 0.762)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1091,7 +1185,7 @@
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 0.762)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1116,8 +1210,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "D"
 				(at 0.635 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1127,6 +1225,8 @@
 			)
 			(property "Value" "BAT54C"
 				(at -6.35 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1136,48 +1236,58 @@
 			)
 			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 				(at 1.905 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "http://www.diodes.com/_files/datasheets/ds11005.pdf"
 				(at -2.032 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "dual schottky barrier diode, common cathode"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "schottky diode common cathode"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "BAT54C_0_1"
@@ -1377,7 +1487,7 @@
 				(pin passive line
 					(at -7.62 0 0)
 					(length 3.81)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1393,16 +1503,16 @@
 					)
 				)
 				(pin passive line
-					(at 0 -5.08 90)
-					(length 5.08)
-					(name "~"
+					(at 7.62 0 180)
+					(length 3.81)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1411,16 +1521,16 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 0 180)
-					(length 3.81)
-					(name "~"
+					(at 0 -5.08 90)
+					(length 5.08)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1438,8 +1548,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -1448,6 +1562,8 @@
 			)
 			(property "Value" "74HCT365"
 				(at 0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -1456,6 +1572,8 @@
 			)
 			(property "Footprint" ""
 				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -1464,6 +1582,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -1472,11 +1592,13 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "74HCT365_0_1"
@@ -1494,6 +1616,24 @@
 			)
 			(symbol "74HCT365_1_1"
 				(pin power_in line
+					(at -19.05 -11.43 0)
+					(length 7.62)
+					(name "OE1"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin power_in line
 					(at -19.05 11.43 0)
 					(length 7.62)
 					(name "A0"
@@ -1504,6 +1644,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 19.05 11.43 180)
+					(length 7.62)
+					(name "Y0"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -1530,6 +1688,24 @@
 					)
 				)
 				(pin power_in line
+					(at 19.05 7.62 180)
+					(length 7.62)
+					(name "Y1"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin power_in line
 					(at -19.05 3.81 0)
 					(length 7.62)
 					(name "A2"
@@ -1540,6 +1716,60 @@
 						)
 					)
 					(number "6"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 19.05 3.81 180)
+					(length 7.62)
+					(name "Y2"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -25.4 90)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 19.05 0 180)
+					(length 7.62)
+					(name "Y3"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "9"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -1566,6 +1796,24 @@
 					)
 				)
 				(pin power_in line
+					(at 19.05 -3.81 180)
+					(length 7.62)
+					(name "Y4"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin power_in line
 					(at -19.05 -3.81 0)
 					(length 7.62)
 					(name "A4"
@@ -1584,6 +1832,24 @@
 					)
 				)
 				(pin power_in line
+					(at 19.05 -7.62 180)
+					(length 7.62)
+					(name "Y5"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin power_in line
 					(at -19.05 -7.62 0)
 					(length 7.62)
 					(name "A5"
@@ -1594,24 +1860,6 @@
 						)
 					)
 					(number "14"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -19.05 -11.43 0)
-					(length 7.62)
-					(name "OE1"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "1"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -1655,132 +1903,6 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -25.4 90)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 19.05 11.43 180)
-					(length 7.62)
-					(name "Y0"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 19.05 7.62 180)
-					(length 7.62)
-					(name "Y1"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 19.05 3.81 180)
-					(length 7.62)
-					(name "Y2"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 19.05 0 180)
-					(length 7.62)
-					(name "Y3"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 19.05 -3.81 180)
-					(length 7.62)
-					(name "Y4"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 19.05 -7.62 180)
-					(length 7.62)
-					(name "Y5"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
 			)
 			(embedded_fonts no)
 		)
@@ -1792,8 +1914,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "D"
 				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.016 1.016)
@@ -1802,6 +1928,8 @@
 			)
 			(property "Value" "CDBA540"
 				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.016 1.016)
@@ -1810,6 +1938,8 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -1818,6 +1948,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -1826,20 +1958,24 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "D? S*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "CDBA540_0_1"
@@ -1870,24 +2006,6 @@
 			)
 			(symbol "CDBA540_1_1"
 				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "A"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 5.08 0 180)
 					(length 3.81)
 					(name "K"
@@ -1898,6 +2016,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1919,8 +2055,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "D"
 				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.016 1.016)
@@ -1929,6 +2069,8 @@
 			)
 			(property "Value" "DIODE"
 				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.016 1.016)
@@ -1937,6 +2079,8 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -1945,6 +2089,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -1953,20 +2099,24 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "D? S*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "DIODE_0_1"
@@ -1997,24 +2147,6 @@
 			)
 			(symbol "DIODE_1_1"
 				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "A"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 5.08 0 180)
 					(length 3.81)
 					(name "K"
@@ -2032,11 +2164,29 @@
 						)
 					)
 				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
 		(symbol "Duet3:GND"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -2047,26 +2197,34 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND"
 				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -2075,6 +2233,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -2083,11 +2243,13 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_0_1"
@@ -2134,8 +2296,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Q"
 				(at 6.35 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2144,6 +2310,8 @@
 			)
 			(property "Value" "Q_DUAL_NMOS_Power33-Device"
 				(at 16.51 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2152,38 +2320,46 @@
 			)
 			(property "Footprint" ""
 				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "TSOP* SC?70* SC?88* SOT?363*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Q_DUAL_NMOS_Power33-Device_1_1"
@@ -2419,24 +2595,6 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 2.54 -5.08 90)
 					(length 2.54)
 					(name "S"
@@ -2447,6 +2605,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2669,6 +2845,24 @@
 						(type none)
 					)
 				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin input line
 					(at -5.08 0 0)
 					(length 5.08)
@@ -2705,29 +2899,11 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
 			(embedded_fonts no)
 		)
 		(symbol "GND_1"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -2738,26 +2914,34 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND_1"
 				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -2766,6 +2950,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -2774,11 +2960,13 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_1_0_1"
@@ -2819,7 +3007,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "GND_10"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -2830,26 +3018,34 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND_10"
 				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -2858,6 +3054,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -2866,11 +3064,13 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_10_0_1"
@@ -2911,7 +3111,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "GND_11"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -2922,26 +3122,34 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND_11"
 				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -2950,6 +3158,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -2958,11 +3168,13 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_11_0_1"
@@ -3003,7 +3215,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "GND_12"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -3014,26 +3226,34 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND_12"
 				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3042,6 +3262,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3050,11 +3272,13 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_12_0_1"
@@ -3095,7 +3319,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "GND_13"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -3106,26 +3330,34 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND_13"
 				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3134,6 +3366,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3142,11 +3376,13 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_13_0_1"
@@ -3187,7 +3423,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "GND_14"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -3198,26 +3434,34 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND_14"
 				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3226,6 +3470,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3234,11 +3480,13 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_14_0_1"
@@ -3279,7 +3527,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "GND_2"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -3290,26 +3538,34 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND_2"
 				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3318,6 +3574,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3326,11 +3584,13 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_2_0_1"
@@ -3371,7 +3631,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "GND_3"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -3382,26 +3642,34 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND_3"
 				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3410,6 +3678,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3418,11 +3688,13 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_3_0_1"
@@ -3463,7 +3735,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "GND_4"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -3474,26 +3746,34 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND_4"
 				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3502,6 +3782,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3510,11 +3792,13 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_4_0_1"
@@ -3555,7 +3839,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "GND_5"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -3566,26 +3850,34 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND_5"
 				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3594,6 +3886,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3602,11 +3896,13 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_5_0_1"
@@ -3647,7 +3943,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "GND_6"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -3658,26 +3954,34 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND_6"
 				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3686,6 +3990,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3694,11 +4000,13 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_6_0_1"
@@ -3739,7 +4047,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "GND_7"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -3750,26 +4058,34 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND_7"
 				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3778,6 +4094,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3786,11 +4104,13 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_7_0_1"
@@ -3831,7 +4151,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "GND_8"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -3842,26 +4162,34 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND_8"
 				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3870,6 +4198,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3878,11 +4208,13 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_8_0_1"
@@ -3923,7 +4255,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "GND_9"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -3934,26 +4266,34 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND_9"
 				(at 0 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3962,6 +4302,8 @@
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3970,11 +4312,13 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_9_0_1"
@@ -6934,12 +7278,14 @@
 		(uuid "025629e5-fbc2-4283-98fe-e6f730b33d2d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 133.9823 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -6956,12 +7302,14 @@
 		(uuid "0262e8d8-c7bf-4280-bed6-b3fbbc0fa980")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 217.9286 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -6978,12 +7326,14 @@
 		(uuid "02d23e91-a4c4-4a1c-bf60-7d0ce52b7a32")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 121.832 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -7000,12 +7350,14 @@
 		(uuid "06d1b67a-f2cc-46a8-8242-84de8d0e8dd0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 121.832 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -7022,12 +7374,14 @@
 		(uuid "0ce10943-c7e7-4789-a7c8-19f0a43dd44d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 205.5862 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7044,12 +7398,14 @@
 		(uuid "162a3a96-ba6e-45e4-be37-9844ffcd38f7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 78.828 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7066,12 +7422,14 @@
 		(uuid "1c7ca276-5321-415d-a4c7-f5fa226b1cad")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 150.8552 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7088,12 +7446,14 @@
 		(uuid "1e5a8435-91c5-4016-ae2e-70f0d3bdfd7c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 236.3135 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -7110,12 +7470,14 @@
 		(uuid "262b1f3c-cb30-4a70-9039-f9a7352ede8d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 67.7004 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7132,12 +7494,14 @@
 		(uuid "36260454-ba74-4764-8e34-52bb77e235f8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 121.832 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -7154,12 +7518,14 @@
 		(uuid "3738c564-bd43-4f14-8ebc-bb7fc106e669")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 80.098 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7176,12 +7542,14 @@
 		(uuid "42c5d4ac-8d8a-426e-be18-9aeff1060542")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 193.0677 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7198,12 +7566,14 @@
 		(uuid "471a9dc0-32ae-4cb5-bb94-efe6f9efd4e7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 153.5162 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7220,12 +7590,14 @@
 		(uuid "4c000a3b-f746-4339-99bb-95716d069e89")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 97.0314 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7242,12 +7614,14 @@
 		(uuid "4ca5afc1-38cc-4b34-a6ae-3a507c22762b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 19.8033 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7264,12 +7638,14 @@
 		(uuid "565cab14-9946-4e57-9f50-a34cdfcb929f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 134.708 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7286,12 +7662,14 @@
 		(uuid "57f1ffec-fe0d-44ec-ba95-bc39eeb83c73")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 97.0314 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7308,12 +7686,14 @@
 		(uuid "6096bb97-6db7-4af5-9cec-70a2b978a6d5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 134.829 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7330,12 +7710,14 @@
 		(uuid "6f730cab-8324-47d1-9c88-511018dc5302")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 190.0942 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7352,12 +7734,14 @@
 		(uuid "759562c9-9faf-4472-a0aa-e1cb832d112e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 42.4214 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7374,12 +7758,14 @@
 		(uuid "75b78404-f478-4e3f-814f-ffa95b5ec468")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 80.098 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7396,12 +7782,14 @@
 		(uuid "7716740f-2bd8-4837-9b8f-d42990b31049")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 19.8033 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7418,12 +7806,14 @@
 		(uuid "7f93c343-7bfd-4294-b15c-abdb7ae9fa1f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 44.2962 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7440,12 +7830,14 @@
 		(uuid "828af128-9671-4e34-ab8b-0bac04c44f50")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 121.832 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -7462,12 +7854,14 @@
 		(uuid "85984d64-3610-4f58-8ace-91f76139a009")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 150.9762 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7484,12 +7878,14 @@
 		(uuid "867ccfaa-c233-4ac0-baba-6b44e2099aea")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 217.8681 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -7506,12 +7902,14 @@
 		(uuid "86b9cd46-7b38-4db0-8247-97d7f6d2d118")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 24.218 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7528,12 +7926,14 @@
 		(uuid "8ca4aa66-fbb4-47af-8819-dd73ee95a2be")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 135.978 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7550,12 +7950,14 @@
 		(uuid "93afa8ce-1473-4823-9b3d-768bbca459d4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 121.832 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -7572,12 +7974,14 @@
 		(uuid "9dea71c8-a4b6-4861-948e-7191a72592ac")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 189.7414 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7594,12 +7998,14 @@
 		(uuid "a0a55b55-7b6e-4f04-8361-e3b4883221f2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 42.4214 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7616,12 +8022,14 @@
 		(uuid "a55f646e-ab77-4184-bee7-26337f8c598e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 186.778 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7638,12 +8046,14 @@
 		(uuid "aa8b887d-004b-40e8-a898-b834c61e5967")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 183.2704 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7660,12 +8070,14 @@
 		(uuid "b79b1f18-2611-4219-9fb6-3c85e03e0304")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 39.0952 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7682,12 +8094,14 @@
 		(uuid "badad6ac-f5d6-4f3d-9527-dc685e5fb401")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 189.7414 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7704,12 +8118,14 @@
 		(uuid "be80938f-39b0-4bd1-8ec5-9aa81f72d3dd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 190.0942 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7726,12 +8142,14 @@
 		(uuid "c1e33174-a10c-45a2-ad9a-59c478a8fd67")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 94.9752 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7748,12 +8166,14 @@
 		(uuid "d5d7799a-de76-4454-9ab3-26ee3cea78f3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 98.9062 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7770,12 +8190,14 @@
 		(uuid "dadc035e-8a2a-4004-a58b-f289863b43b5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 22.948 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7792,12 +8214,14 @@
 		(uuid "daed722c-fc70-4504-8b37-e0641b1a776e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 44.2962 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7814,12 +8238,14 @@
 		(uuid "dc55cd2e-ee4d-4b24-92a1-790e6d5442ae")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 131.3818 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7836,12 +8262,14 @@
 		(uuid "e4be78bc-dc34-4c73-83c1-ae892d99bb41")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 98.9062 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7858,12 +8286,14 @@
 		(uuid "e7992757-954a-48de-b465-ec61bdd0e099")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 19.8033 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7880,12 +8310,14 @@
 		(uuid "e8b7d61d-92a8-44ce-bd18-79f7ac61d252")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 24.218 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7902,12 +8334,14 @@
 		(uuid "ecfc14dc-44a0-494b-bb59-728399d8e8f3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 95.0962 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7924,12 +8358,14 @@
 		(uuid "ed18f47c-f7e7-4b79-a42d-9b64ec922c7d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 202.4414 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7946,12 +8382,14 @@
 		(uuid "f0ca8f35-599f-4ffc-a45c-a3d2e21a91ac")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 166.7604 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7968,12 +8406,14 @@
 		(uuid "f261408c-5397-49a3-8eb2-867a9f318869")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 151.6414 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -7990,12 +8430,14 @@
 		(uuid "f3c07b7d-7185-4f91-b775-a9a92bb4261d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 193.0677 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -8012,12 +8454,14 @@
 		(uuid "f445d8ae-f5c1-43f2-8236-370527d6c8ef")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 19.8033 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -8034,12 +8478,14 @@
 		(uuid "fab3c254-f171-48ce-883b-4575d0d2208a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 19.8033 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -8056,12 +8502,14 @@
 		(uuid "ffbad7ae-a356-4e7f-934a-cdccba298ffc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 39.2162 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -8070,61 +8518,73 @@
 		(lib_id "Duet3:GND")
 		(at 166.37 140.97 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005090541f")
 		(property "Reference" "#PWR055"
 			(at 166.37 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 166.37 142.748 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 166.37 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 166.37 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 166.37 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "64c9aa8b-a445-4008-9475-f379923b67d4")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "#PWR055")
 					(unit 1)
@@ -8136,13 +8596,17 @@
 		(lib_id "Device:R_Small")
 		(at 46.99 256.54 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000056818a28")
 		(property "Reference" "R39"
 			(at 45.085 256.7432 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8151,6 +8615,8 @@
 		)
 		(property "Value" "10K"
 			(at 48.7172 256.8448 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8159,15 +8625,19 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Wbry"
 			(at 46.99 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 46.99 256.54 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8176,20 +8646,24 @@
 		)
 		(property "Description" ""
 			(at 46.99 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "RMCS0402FT10K0"
 			(at 46.99 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8199,7 +8673,7 @@
 			(uuid "8be28ff1-079e-4819-bb5a-053dff25b574")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "R39")
 					(unit 1)
@@ -8211,13 +8685,17 @@
 		(lib_id "Device:R_Small")
 		(at 153.67 128.27 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005713c9e5")
 		(property "Reference" "R41"
 			(at 153.8732 130.175 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8226,6 +8704,8 @@
 		)
 		(property "Value" "1K"
 			(at 153.9748 126.5428 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8234,15 +8714,19 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Wbry"
 			(at 153.67 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 153.67 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8251,20 +8735,24 @@
 		)
 		(property "Description" ""
 			(at 153.67 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "RC0402FR-131KL"
 			(at 153.67 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8274,7 +8762,7 @@
 			(uuid "b8792dcb-460d-4889-bdac-9dbe097dc98e")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "R41")
 					(unit 1)
@@ -8286,13 +8774,17 @@
 		(lib_id "Duet3:DIODE")
 		(at 170.18 107.95 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-0000589c67de")
 		(property "Reference" "D12"
 			(at 167.64 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -8301,6 +8793,8 @@
 		)
 		(property "Value" "1A+ 100V+"
 			(at 172.72 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -8309,38 +8803,46 @@
 		)
 		(property "Footprint" "complib:DO-219AB"
 			(at 170.18 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 170.18 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 170.18 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "VS-1EFH02HM3/I /  ES1CL RVG"
 			(at 170.18 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8350,7 +8852,7 @@
 			(uuid "90ece705-81b2-4e4a-9999-886c357a48c7")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "D12")
 					(unit 1)
@@ -8362,13 +8864,17 @@
 		(lib_id "Device:C_Small")
 		(at 95.25 215.9 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b0f9ceb")
 		(property "Reference" "C71"
 			(at 97.155 218.44 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8378,6 +8884,8 @@
 		)
 		(property "Value" "0u1 16V"
 			(at 97.155 212.725 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8387,15 +8895,19 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Wbry"
 			(at 95.25 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 95.25 215.9 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8404,20 +8916,24 @@
 		)
 		(property "Description" ""
 			(at 95.25 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "0402YC104KAT2A"
 			(at 95.25 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8427,7 +8943,7 @@
 			(uuid "24cada3c-d9c6-461b-92f3-b79a20417685")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "C71")
 					(unit 1)
@@ -8440,61 +8956,73 @@
 		(lib_id "Duet3:GND")
 		(at 101.6 220.98 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b11fdcb")
 		(property "Reference" "#PWR057"
 			(at 101.6 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 101.6 222.758 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 101.6 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 101.6 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 101.6 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "702b3415-97fb-41c2-975c-d783fd626bde")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "#PWR057")
 					(unit 1)
@@ -8507,61 +9035,73 @@
 		(lib_id "Duet3:GND")
 		(at 218.44 140.97 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b1dcfe0")
 		(property "Reference" "#PWR059"
 			(at 218.44 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 218.44 142.748 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 218.44 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 218.44 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 218.44 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "011474ac-6ec9-4d67-b530-c6771456bad6")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "#PWR059")
 					(unit 1)
@@ -8573,13 +9113,17 @@
 		(lib_id "Device:R_Small")
 		(at 205.74 128.27 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b1dcff1")
 		(property "Reference" "R45"
 			(at 205.9432 130.175 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8588,6 +9132,8 @@
 		)
 		(property "Value" "1K"
 			(at 206.0448 126.5428 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8596,15 +9142,19 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Wbry"
 			(at 205.74 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 205.74 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8613,20 +9163,24 @@
 		)
 		(property "Description" ""
 			(at 205.74 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "RC0402FR-131KL"
 			(at 205.74 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8636,7 +9190,7 @@
 			(uuid "7568e3c8-800f-4c89-a260-7ca027a12e4d")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "R45")
 					(unit 1)
@@ -8648,13 +9202,17 @@
 		(lib_id "Duet3:DIODE")
 		(at 222.25 107.95 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b1dcff8")
 		(property "Reference" "D14"
 			(at 219.71 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -8663,6 +9221,8 @@
 		)
 		(property "Value" "1A+ 100V+"
 			(at 224.79 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -8671,38 +9231,46 @@
 		)
 		(property "Footprint" "complib:DO-219AB"
 			(at 222.25 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 222.25 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 222.25 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "VS-1EFH02HM3/I /  ES1CL RVG"
 			(at 222.25 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8712,7 +9280,7 @@
 			(uuid "9c0a6ff3-c893-498d-b096-b9eb644f573b")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "D14")
 					(unit 1)
@@ -8725,61 +9293,73 @@
 		(lib_id "Duet3:GND")
 		(at 57.15 196.85 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b1ddce2")
 		(property "Reference" "#PWR061"
 			(at 57.15 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 57.15 198.628 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 57.15 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 57.15 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 57.15 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "f924c8c0-3985-4955-8014-72fb400e3579")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "#PWR061")
 					(unit 1)
@@ -8791,13 +9371,17 @@
 		(lib_id "Device:R_Small")
 		(at 44.45 182.88 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b1ddcf3")
 		(property "Reference" "R50"
 			(at 44.6532 184.785 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8806,6 +9390,8 @@
 		)
 		(property "Value" "1K"
 			(at 44.7548 181.1528 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8814,15 +9400,19 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Wbry"
 			(at 44.45 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 44.45 182.88 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8831,20 +9421,24 @@
 		)
 		(property "Description" ""
 			(at 44.45 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "RC0402FR-131KL"
 			(at 44.45 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8854,7 +9448,7 @@
 			(uuid "9f741d18-4469-4374-920c-7a4d6ffcae9e")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "R50")
 					(unit 1)
@@ -8866,13 +9460,17 @@
 		(lib_id "Duet3:DIODE")
 		(at 60.96 162.56 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b1ddcfa")
 		(property "Reference" "D16"
 			(at 58.42 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -8881,6 +9479,8 @@
 		)
 		(property "Value" "1A+ 100V+"
 			(at 63.5 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -8889,38 +9489,46 @@
 		)
 		(property "Footprint" "complib:DO-219AB"
 			(at 60.96 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 60.96 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 60.96 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "VS-1EFH02HM3/I /  ES1CL RVG"
 			(at 60.96 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8930,7 +9538,7 @@
 			(uuid "07276451-4c91-4d19-8716-6ac5f87caa3a")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "D16")
 					(unit 1)
@@ -8943,61 +9551,73 @@
 		(lib_id "Duet3:GND")
 		(at 111.76 196.85 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b1def6f")
 		(property "Reference" "#PWR062"
 			(at 111.76 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 111.76 198.628 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 111.76 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 111.76 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 111.76 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "0c221cc6-b0f7-4787-9dd8-ef5950e82b8d")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "#PWR062")
 					(unit 1)
@@ -9009,13 +9629,17 @@
 		(lib_id "Device:R_Small")
 		(at 99.06 182.88 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b1def80")
 		(property "Reference" "R52"
 			(at 99.2632 184.785 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9024,6 +9648,8 @@
 		)
 		(property "Value" "1K"
 			(at 99.3648 181.1528 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9032,15 +9658,19 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Wbry"
 			(at 99.06 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 99.06 182.88 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9049,20 +9679,24 @@
 		)
 		(property "Description" ""
 			(at 99.06 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "RC0402FR-131KL"
 			(at 99.06 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9072,7 +9706,7 @@
 			(uuid "f1ac110c-4ca7-435c-b054-8e285811f921")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "R52")
 					(unit 1)
@@ -9084,13 +9718,17 @@
 		(lib_id "Duet3:DIODE")
 		(at 115.57 162.56 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b1def87")
 		(property "Reference" "D17"
 			(at 113.03 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -9099,6 +9737,8 @@
 		)
 		(property "Value" "1A+ 100V+"
 			(at 118.11 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -9107,38 +9747,46 @@
 		)
 		(property "Footprint" "complib:DO-219AB"
 			(at 115.57 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 115.57 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 115.57 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "VS-1EFH02HM3/I /  ES1CL RVG"
 			(at 115.57 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9148,7 +9796,7 @@
 			(uuid "2755dc51-0afc-4f51-895f-3e1c72c0a4f5")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "D17")
 					(unit 1)
@@ -9161,61 +9809,73 @@
 		(lib_id "Duet3:GND")
 		(at 57.15 140.97 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b1e07d7")
 		(property "Reference" "#PWR063"
 			(at 57.15 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 57.15 142.748 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 57.15 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 57.15 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 57.15 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "6fa7a328-c4b9-4962-a4f7-fccdc6364ede")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "#PWR063")
 					(unit 1)
@@ -9227,13 +9887,17 @@
 		(lib_id "Device:R_Small")
 		(at 156.21 255.27 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b1e07e1")
 		(property "Reference" "R53"
 			(at 154.305 255.4732 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9242,6 +9906,8 @@
 		)
 		(property "Value" "10K"
 			(at 157.9372 255.5748 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9250,15 +9916,19 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 156.21 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 156.21 255.27 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9267,29 +9937,35 @@
 		)
 		(property "Description" ""
 			(at 156.21 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "AC0402FR-0710KL"
 			(at 156.21 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C144807"
 			(at 156.21 255.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9299,7 +9975,7 @@
 			(uuid "b2ddbb38-2473-403b-beb4-0b32fb33716e")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "R53")
 					(unit 1)
@@ -9311,13 +9987,17 @@
 		(lib_id "Device:R_Small")
 		(at 44.45 128.27 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b1e07e8")
 		(property "Reference" "R54"
 			(at 44.6532 130.175 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9326,6 +10006,8 @@
 		)
 		(property "Value" "1K"
 			(at 44.7548 126.5428 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9334,15 +10016,19 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Wbry"
 			(at 44.45 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 44.45 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9351,20 +10037,24 @@
 		)
 		(property "Description" ""
 			(at 44.45 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "RC0402FR-131KL"
 			(at 44.45 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9374,7 +10064,7 @@
 			(uuid "c929f68b-eec8-4442-9b5a-e63f6fec8199")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "R54")
 					(unit 1)
@@ -9386,13 +10076,17 @@
 		(lib_id "Duet3:DIODE")
 		(at 60.96 107.95 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b1e07ef")
 		(property "Reference" "D18"
 			(at 58.42 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -9401,6 +10095,8 @@
 		)
 		(property "Value" "1A+ 100V+"
 			(at 63.5 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -9409,38 +10105,46 @@
 		)
 		(property "Footprint" "complib:DO-219AB"
 			(at 60.96 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 60.96 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 60.96 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "VS-1EFH02HM3/I /  ES1CL RVG"
 			(at 60.96 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9450,7 +10154,7 @@
 			(uuid "f94b496f-7fdd-469b-aa70-df83a6312409")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "D18")
 					(unit 1)
@@ -9463,61 +10167,73 @@
 		(lib_id "Duet3:GND")
 		(at 111.76 140.97 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b1e27c3")
 		(property "Reference" "#PWR064"
 			(at 111.76 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 111.76 142.748 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 111.76 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 111.76 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 111.76 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "50081fb5-20d4-495a-81ee-7fc4f2dea327")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "#PWR064")
 					(unit 1)
@@ -9529,13 +10245,17 @@
 		(lib_id "Device:R_Small")
 		(at 99.06 128.27 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b1e27d4")
 		(property "Reference" "R56"
 			(at 99.2632 130.175 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9544,6 +10264,8 @@
 		)
 		(property "Value" "1K"
 			(at 99.3648 126.5428 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9552,15 +10274,19 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Wbry"
 			(at 99.06 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 99.06 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9569,20 +10295,24 @@
 		)
 		(property "Description" ""
 			(at 99.06 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "RC0402FR-131KL"
 			(at 99.06 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9592,7 +10322,7 @@
 			(uuid "51f1860f-6bd2-428f-be09-b26628c56d19")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "R56")
 					(unit 1)
@@ -9604,13 +10334,17 @@
 		(lib_id "Duet3:DIODE")
 		(at 115.57 107.95 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b1e27db")
 		(property "Reference" "D19"
 			(at 113.03 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -9619,6 +10353,8 @@
 		)
 		(property "Value" "1A+ 100V+"
 			(at 118.11 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -9627,38 +10363,46 @@
 		)
 		(property "Footprint" "complib:DO-219AB"
 			(at 115.57 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 115.57 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 115.57 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "VS-1EFH02HM3/I /  ES1CL RVG"
 			(at 115.57 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9668,7 +10412,7 @@
 			(uuid "ab686d31-dc5a-4ef7-94bd-2875288edaf9")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "D19")
 					(unit 1)
@@ -9680,13 +10424,17 @@
 		(lib_id "Device:Q_NMOS_GDS")
 		(at 50.8 62.23 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b1e5d21")
 		(property "Reference" "TR1"
 			(at 48.26 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.778 1.778)
@@ -9695,6 +10443,8 @@
 		)
 		(property "Value" "AOD4184A"
 			(at 43.688 69.342 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9703,38 +10453,46 @@
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2_vias"
 			(at 50.8 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 50.8 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 50.8 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "AOD66406 / AOD4184A "
 			(at 50.8 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9747,7 +10505,7 @@
 			(uuid "18a05c0f-a983-488a-9cfb-fb46c83c56db")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "TR1")
 					(unit 1)
@@ -9759,61 +10517,73 @@
 		(lib_id "Duet3:GND")
 		(at 53.34 76.2 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b1e5d28")
 		(property "Reference" "#PWR054"
 			(at 53.34 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 53.34 77.978 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 53.34 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 53.34 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 53.34 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "aa47728c-b833-4c51-a992-9898baaf8714")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "#PWR054")
 					(unit 1)
@@ -9825,13 +10595,17 @@
 		(lib_id "Device:R_Small")
 		(at 41.91 62.23 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b1e5d38")
 		(property "Reference" "R40"
 			(at 42.1132 64.135 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9840,6 +10614,8 @@
 		)
 		(property "Value" "180R"
 			(at 42.2148 60.5028 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9848,15 +10624,19 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Wbry"
 			(at 41.91 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 41.91 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9865,20 +10645,24 @@
 		)
 		(property "Description" ""
 			(at 41.91 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "RMCF0402FT180R"
 			(at 41.91 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9888,7 +10672,7 @@
 			(uuid "1ec9a99f-2a77-4fd3-9141-1cff058651e0")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "R40")
 					(unit 1)
@@ -9900,13 +10684,17 @@
 		(lib_id "Device:C_Small")
 		(at 176.53 62.23 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b1f8ea1")
 		(property "Reference" "C70"
 			(at 173.99 64.135 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9916,6 +10704,8 @@
 		)
 		(property "Value" "10u 50V"
 			(at 179.705 64.135 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9925,15 +10715,19 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 176.53 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 176.53 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9942,20 +10736,24 @@
 		)
 		(property "Description" ""
 			(at 176.53 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "CL31A106KBHNNNE"
 			(at 176.53 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9965,7 +10763,7 @@
 			(uuid "d249d621-a0ec-4fd6-8889-45dda9103032")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "C70")
 					(unit 1)
@@ -9977,13 +10775,17 @@
 		(lib_id "Device:LED")
 		(at 53.34 45.72 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b220af8")
 		(property "Reference" "D11"
 			(at 50.8 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9992,6 +10794,8 @@
 		)
 		(property "Value" "OUT_0"
 			(at 48.26 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10000,38 +10804,46 @@
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 53.34 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 53.34 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 53.34 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "150060RS75000 or equivalent Red"
 			(at 53.34 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10041,7 +10853,7 @@
 			(uuid "3270f410-7df9-4296-b1fe-cbe0adc212a3")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "D11")
 					(unit 1)
@@ -10053,13 +10865,17 @@
 		(lib_id "Device:R_Small")
 		(at 53.34 36.83 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b220aff")
 		(property "Reference" "R42"
 			(at 51.435 37.0332 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10068,6 +10884,8 @@
 		)
 		(property "Value" "4K7 0.1W"
 			(at 55.0672 37.1348 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10076,15 +10894,19 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Wbry"
 			(at 53.34 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 53.34 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10093,20 +10915,24 @@
 		)
 		(property "Description" ""
 			(at 53.34 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "RK73H1ETTP4701F"
 			(at 53.34 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10116,7 +10942,7 @@
 			(uuid "d587f8e1-f0a2-4365-b993-f039cf717fdc")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "R42")
 					(unit 1)
@@ -10128,13 +10954,17 @@
 		(lib_id "Duet3:74HCT365")
 		(at 85.09 237.49 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b248222")
 		(property "Reference" "U8"
 			(at 85.09 234.95 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10143,6 +10973,8 @@
 		)
 		(property "Value" "74HCT365"
 			(at 83.82 240.03 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10151,15 +10983,19 @@
 		)
 		(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
 			(at 85.09 213.5124 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 85.09 236.22 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10168,20 +11004,24 @@
 		)
 		(property "Description" ""
 			(at 85.09 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "MC74HCT365ADTR2G"
 			(at 85.09 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10233,7 +11073,7 @@
 			(uuid "192b838d-70b9-4058-919b-4c17a6b3c918")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "U8")
 					(unit 1)
@@ -10245,13 +11085,17 @@
 		(lib_id "Device:Q_NMOS_GDS")
 		(at 106.68 62.23 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b27ba25")
 		(property "Reference" "TR3"
 			(at 104.14 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.778 1.778)
@@ -10260,6 +11104,8 @@
 		)
 		(property "Value" "AOD4184A"
 			(at 100.33 67.945 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10268,38 +11114,46 @@
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2_vias"
 			(at 106.68 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 106.68 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 106.68 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "AOD66406 / AOD4184A "
 			(at 106.68 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10312,7 +11166,7 @@
 			(uuid "3d3bf3e8-8897-4357-9cd7-bfeb3a75c1f6")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "TR3")
 					(unit 1)
@@ -10325,61 +11179,73 @@
 		(lib_id "Duet3:GND")
 		(at 109.22 76.2 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b27ba2c")
 		(property "Reference" "#PWR058"
 			(at 109.22 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 109.22 77.978 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 109.22 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 109.22 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 109.22 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "786ccc80-2dc6-4146-ac83-3b1c88e18634")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "#PWR058")
 					(unit 1)
@@ -10391,13 +11257,17 @@
 		(lib_id "Device:R_Small")
 		(at 97.79 62.23 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b27ba34")
 		(property "Reference" "R43"
 			(at 97.9932 64.135 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10406,6 +11276,8 @@
 		)
 		(property "Value" "180R"
 			(at 98.0948 60.5028 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10414,15 +11286,19 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Wbry"
 			(at 97.79 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 97.79 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10431,20 +11307,24 @@
 		)
 		(property "Description" ""
 			(at 97.79 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "RMCF0402FT180R"
 			(at 97.79 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10454,7 +11334,7 @@
 			(uuid "255828a5-58c3-4799-98fa-cff3b6ac98c7")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "R43")
 					(unit 1)
@@ -10466,13 +11346,17 @@
 		(lib_id "Device:LED")
 		(at 109.22 45.72 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b27ba41")
 		(property "Reference" "D13"
 			(at 106.68 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10481,6 +11365,8 @@
 		)
 		(property "Value" "OUT_1"
 			(at 104.14 45.085 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10489,38 +11375,46 @@
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 109.22 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 109.22 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 109.22 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "150060RS75000 or equivalent Red"
 			(at 109.22 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10530,7 +11424,7 @@
 			(uuid "7831d916-a389-4cc8-b2cd-0704c0574259")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "D13")
 					(unit 1)
@@ -10542,13 +11436,17 @@
 		(lib_id "Device:R_Small")
 		(at 109.22 36.83 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b27ba47")
 		(property "Reference" "R46"
 			(at 107.315 37.0332 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10557,6 +11455,8 @@
 		)
 		(property "Value" "4K7 0.1W"
 			(at 110.9472 37.1348 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10565,15 +11465,19 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Wbry"
 			(at 109.22 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 109.22 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10582,20 +11486,24 @@
 		)
 		(property "Description" ""
 			(at 109.22 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "RK73H1ETTP4701F"
 			(at 109.22 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10605,7 +11513,7 @@
 			(uuid "d520c144-d67c-4056-a8c9-b0a6ff9f176b")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "R46")
 					(unit 1)
@@ -10617,13 +11525,17 @@
 		(lib_id "Device:Q_NMOS_GDS")
 		(at 162.56 62.23 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b280760")
 		(property "Reference" "TR5"
 			(at 160.02 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.778 1.778)
@@ -10632,6 +11544,8 @@
 		)
 		(property "Value" "AOD4184A"
 			(at 155.067 69.088 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10640,38 +11554,46 @@
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2_vias"
 			(at 162.56 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 162.56 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 162.56 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "AOD66406 / AOD4184A "
 			(at 162.56 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10684,7 +11606,7 @@
 			(uuid "064587ae-28d4-42dd-a497-a6679a749d8c")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "TR5")
 					(unit 1)
@@ -10697,61 +11619,73 @@
 		(lib_id "Duet3:GND")
 		(at 165.1 76.2 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b280767")
 		(property "Reference" "#PWR060"
 			(at 165.1 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 165.1 77.978 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 165.1 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 165.1 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 165.1 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "959c3050-ab28-4e19-afb9-453cd01826cb")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "#PWR060")
 					(unit 1)
@@ -10763,13 +11697,17 @@
 		(lib_id "Device:R_Small")
 		(at 153.67 62.23 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b28076f")
 		(property "Reference" "R47"
 			(at 153.8732 64.135 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10778,6 +11716,8 @@
 		)
 		(property "Value" "180R"
 			(at 153.9748 60.5028 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10786,15 +11726,19 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Wbry"
 			(at 153.67 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 153.67 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10803,20 +11747,24 @@
 		)
 		(property "Description" ""
 			(at 153.67 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "RMCF0402FT180R"
 			(at 153.67 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10826,7 +11774,7 @@
 			(uuid "2e2ff859-2093-4f4f-8d42-d1989007696a")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "R47")
 					(unit 1)
@@ -10838,13 +11786,17 @@
 		(lib_id "Device:C_Small")
 		(at 63.5 62.23 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b280776")
 		(property "Reference" "C73"
 			(at 60.96 64.135 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10854,6 +11806,8 @@
 		)
 		(property "Value" "10u 50V"
 			(at 66.675 64.135 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10863,15 +11817,19 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 63.5 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 63.5 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10880,20 +11838,24 @@
 		)
 		(property "Description" ""
 			(at 63.5 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "CL31A106KBHNNNE"
 			(at 63.5 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10903,7 +11865,7 @@
 			(uuid "a639c8c3-d99d-49b8-9778-eae683e5e25c")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "C73")
 					(unit 1)
@@ -10915,13 +11877,17 @@
 		(lib_id "Device:LED")
 		(at 165.1 45.72 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b28077c")
 		(property "Reference" "D15"
 			(at 162.56 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10930,6 +11896,8 @@
 		)
 		(property "Value" "OUT_2"
 			(at 160.02 46.355 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10938,38 +11906,46 @@
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 165.1 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 165.1 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 165.1 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "150060RS75000 or equivalent Red"
 			(at 165.1 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10979,7 +11955,7 @@
 			(uuid "f341c6e0-34c0-4f4e-81b0-e0ba5868283a")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "D15")
 					(unit 1)
@@ -10991,13 +11967,17 @@
 		(lib_id "Device:R_Small")
 		(at 165.1 36.83 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b280782")
 		(property "Reference" "R49"
 			(at 163.195 37.0332 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11006,6 +11986,8 @@
 		)
 		(property "Value" "4K7 0.1W"
 			(at 166.8272 37.1348 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11014,15 +11996,19 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Wbry"
 			(at 165.1 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 165.1 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -11031,20 +12017,24 @@
 		)
 		(property "Description" ""
 			(at 165.1 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "RK73H1ETTP4701F"
 			(at 165.1 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11054,7 +12044,7 @@
 			(uuid "3f5d6570-99ee-43c8-bbbb-cca130142619")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "R49")
 					(unit 1)
@@ -11067,61 +12057,73 @@
 		(lib_id "Duet3:GND")
 		(at 85.09 265.43 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b29011f")
 		(property "Reference" "#PWR056"
 			(at 85.09 265.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 85.09 267.208 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 85.09 265.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 85.09 265.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 85.09 265.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "4a23e1ee-6713-4d28-a03c-eb4defb43792")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "#PWR056")
 					(unit 1)
@@ -11133,13 +12135,17 @@
 		(lib_id "Device:C_Small")
 		(at 207.01 215.9 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b2b0c1a")
 		(property "Reference" "C74"
 			(at 208.915 218.44 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11149,6 +12155,8 @@
 		)
 		(property "Value" "100nF 16V"
 			(at 208.915 212.725 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11158,15 +12166,19 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 207.01 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 207.01 215.9 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -11175,29 +12187,35 @@
 		)
 		(property "Description" ""
 			(at 207.01 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "GRM155R71C104KA88D"
 			(at 207.01 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C71629"
 			(at 207.01 215.9 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11207,7 +12225,7 @@
 			(uuid "0b516b73-57d6-4afc-be80-994dfe1f2cda")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "C74")
 					(unit 1)
@@ -11220,61 +12238,73 @@
 		(lib_id "Duet3:GND")
 		(at 213.36 220.98 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b2b0c20")
 		(property "Reference" "#PWR066"
 			(at 213.36 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 213.36 222.758 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 213.36 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 213.36 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 213.36 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "da3fd306-05e6-445d-8f78-afa8fb1a4b96")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "#PWR066")
 					(unit 1)
@@ -11286,13 +12316,17 @@
 		(lib_id "Duet3:74HCT365")
 		(at 195.58 237.49 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b2b0c29")
 		(property "Reference" "U9"
 			(at 195.58 234.95 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -11301,6 +12335,8 @@
 		)
 		(property "Value" "74HCT365"
 			(at 194.31 238.76 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -11309,15 +12345,19 @@
 		)
 		(property "Footprint" "Package_SO:SOP-16_3.9x9.9mm_P1.27mm"
 			(at 195.58 213.5124 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 195.58 236.22 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -11326,29 +12366,35 @@
 		)
 		(property "Description" ""
 			(at 195.58 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "74HCT365D,653"
 			(at 195.58 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C547597"
 			(at 195.58 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11400,7 +12446,7 @@
 			(uuid "6ff7d902-144f-47a9-9148-95c53a67e075")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "U9")
 					(unit 1)
@@ -11413,61 +12459,73 @@
 		(lib_id "Duet3:GND")
 		(at 187.96 265.43 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b2d45b6")
 		(property "Reference" "#PWR065"
 			(at 187.96 265.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 187.96 267.208 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 187.96 265.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 187.96 265.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 187.96 265.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "38bf8508-5de2-4ca9-8f8c-b9df96227d19")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "#PWR065")
 					(unit 1)
@@ -11479,13 +12537,17 @@
 		(lib_id "Connector_Generic:Conn_01x03")
 		(at 212.09 72.39 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b346425")
 		(property "Reference" "J29"
 			(at 214.0966 71.3232 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11495,6 +12557,8 @@
 		)
 		(property "Value" "V_OUT_6-9 Select"
 			(at 214.0966 73.6346 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11504,38 +12568,46 @@
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 212.09 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 212.09 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 212.09 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "THS-03-R"
 			(at 212.09 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11548,7 +12620,7 @@
 			(uuid "8d85bbaf-4c4a-4a64-aaaf-5d92a8d8bf86")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "J29")
 					(unit 1)
@@ -11560,13 +12632,17 @@
 		(lib_id "Device:R_Small")
 		(at 29.21 256.54 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b3909ec")
 		(property "Reference" "R57"
 			(at 27.305 256.7432 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11575,6 +12651,8 @@
 		)
 		(property "Value" "10K"
 			(at 30.9372 256.8448 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11583,15 +12661,19 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Wbry"
 			(at 29.21 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 29.21 256.54 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -11600,20 +12682,24 @@
 		)
 		(property "Description" ""
 			(at 29.21 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "RMCS0402FT10K0"
 			(at 29.21 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11623,7 +12709,7 @@
 			(uuid "4f845a30-3e8a-44b5-9584-2b02699fa55e")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "R57")
 					(unit 1)
@@ -11635,13 +12721,17 @@
 		(lib_id "Device:R_Small")
 		(at 35.56 256.54 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b3a1472")
 		(property "Reference" "R58"
 			(at 33.655 256.7432 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11650,6 +12740,8 @@
 		)
 		(property "Value" "10K"
 			(at 37.2872 256.8448 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11658,15 +12750,19 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Wbry"
 			(at 35.56 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 35.56 256.54 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -11675,20 +12771,24 @@
 		)
 		(property "Description" ""
 			(at 35.56 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "RMCS0402FT10K0"
 			(at 35.56 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11698,7 +12798,7 @@
 			(uuid "de8f116f-1503-4b75-b240-751dae21daef")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "R58")
 					(unit 1)
@@ -11710,13 +12810,17 @@
 		(lib_id "Device:R_Small")
 		(at 41.91 256.54 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b3b2ddc")
 		(property "Reference" "R59"
 			(at 40.005 256.7432 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11725,6 +12829,8 @@
 		)
 		(property "Value" "10K"
 			(at 43.6372 256.8448 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11733,15 +12839,19 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Wbry"
 			(at 41.91 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 41.91 256.54 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -11750,20 +12860,24 @@
 		)
 		(property "Description" ""
 			(at 41.91 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "RMCS0402FT10K0"
 			(at 41.91 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11773,7 +12887,7 @@
 			(uuid "dfdb269d-d026-4bb7-a898-cc3a1a95993d")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "R59")
 					(unit 1)
@@ -11785,13 +12899,17 @@
 		(lib_id "Duet3:CDBA540")
 		(at 172.72 45.72 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b79d725")
 		(property "Reference" "D26"
 			(at 170.18 40.64 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -11800,6 +12918,8 @@
 		)
 		(property "Value" "3A 40V"
 			(at 175.26 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -11808,38 +12928,46 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 172.72 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 172.72 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 172.72 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "ACDBA340-HF or similar"
 			(at 172.72 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11849,7 +12977,7 @@
 			(uuid "0f5a78b4-8581-4e36-b608-d04968ba032b")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "D26")
 					(unit 1)
@@ -11861,13 +12989,17 @@
 		(lib_id "Duet3:CDBA540")
 		(at 115.57 45.72 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b81bad3")
 		(property "Reference" "D27"
 			(at 113.03 40.64 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -11876,6 +13008,8 @@
 		)
 		(property "Value" "3A 40V"
 			(at 118.11 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -11884,38 +13018,46 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 115.57 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 115.57 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 115.57 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "ACDBA340-HF or similar"
 			(at 115.57 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11925,7 +13067,7 @@
 			(uuid "53797b2a-0e79-44b9-8aef-a1259215336e")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "D27")
 					(unit 1)
@@ -11937,13 +13079,17 @@
 		(lib_id "Duet3:CDBA540")
 		(at 59.69 45.72 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005b81bb7b")
 		(property "Reference" "D28"
 			(at 57.15 40.64 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -11952,6 +13098,8 @@
 		)
 		(property "Value" "3A 40V"
 			(at 62.23 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -11960,38 +13108,46 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 59.69 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 59.69 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 59.69 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "ACDBA340-HF or similar"
 			(at 59.69 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12001,7 +13157,7 @@
 			(uuid "3583b65b-efc4-4005-905d-86c9a8e9e446")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "D28")
 					(unit 1)
@@ -12014,13 +13170,17 @@
 		(at 182.88 177.8 270)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005c934ffc")
 		(property "Reference" "D34"
 			(at 186.055 178.435 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -12029,6 +13189,8 @@
 		)
 		(property "Value" "BAT54C"
 			(at 186.69 173.355 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -12037,15 +13199,19 @@
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 182.88 180.34 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 182.88 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -12054,20 +13220,24 @@
 		)
 		(property "Description" ""
 			(at 182.88 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "BAT54CLT1G"
 			(at 182.88 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12080,7 +13250,7 @@
 			(uuid "7a5fc404-9303-4506-b13b-06c1359dd2c5")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "D34")
 					(unit 1)
@@ -12092,13 +13262,17 @@
 		(lib_id "Device:R_Small")
 		(at 190.5 170.18 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005c9be759")
 		(property "Reference" "R186"
 			(at 190.7032 172.085 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12107,6 +13281,8 @@
 		)
 		(property "Value" "470R 0.1W"
 			(at 190.8048 168.4528 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12115,15 +13291,19 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Wbry"
 			(at 190.5 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 190.5 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -12132,20 +13312,24 @@
 		)
 		(property "Description" ""
 			(at 190.5 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "RK73H1ETTP4700F"
 			(at 190.5 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12155,7 +13339,7 @@
 			(uuid "16f39769-96c5-455a-a2f9-cea1f33e285f")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "R186")
 					(unit 1)
@@ -12167,13 +13351,17 @@
 		(lib_id "Device:R_Small")
 		(at 190.5 185.42 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005c9dcec5")
 		(property "Reference" "R185"
 			(at 190.7032 187.325 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12182,6 +13370,8 @@
 		)
 		(property "Value" "470R 0.1W"
 			(at 190.8048 183.6928 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12190,15 +13380,19 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Wbry"
 			(at 190.5 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 190.5 185.42 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -12207,20 +13401,24 @@
 		)
 		(property "Description" ""
 			(at 190.5 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "RK73H1ETTP4700F"
 			(at 190.5 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12230,7 +13428,7 @@
 			(uuid "6b936ce6-ea7a-4551-9f84-efb5ff2f6fbd")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "R185")
 					(unit 1)
@@ -12242,13 +13440,17 @@
 		(lib_id "Duet3:Q_DUAL_NMOS_Power33-Device")
 		(at 109.22 182.88 0)
 		(unit 2)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005d62c53a")
 		(property "Reference" "Q25"
 			(at 103.505 185.42 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12258,48 +13460,58 @@
 		)
 		(property "Value" "Q_DUAL_NMOS"
 			(at 116.5098 184.023 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SON:Fairchild_DualPower33-6_3x3mm"
 			(at 114.3 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 114.3 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 109.22 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "DMT6018LDR"
 			(at 109.22 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "3"
@@ -12321,7 +13533,7 @@
 			(uuid "65b60780-743b-4bde-8e90-a36bea358407")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "Q25")
 					(unit 2)
@@ -12333,13 +13545,17 @@
 		(lib_id "Duet3:Q_DUAL_NMOS_Power33-Device")
 		(at 54.61 128.27 0)
 		(unit 2)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005d62c546")
 		(property "Reference" "Q27"
 			(at 48.895 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12349,48 +13565,58 @@
 		)
 		(property "Value" "Q_DUAL_NMOS"
 			(at 61.8998 129.413 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SON:Fairchild_DualPower33-6_3x3mm"
 			(at 59.69 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 59.69 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 54.61 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "DMT6018LDR"
 			(at 54.61 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "3"
@@ -12412,7 +13638,7 @@
 			(uuid "54e05cd4-0d49-4876-af46-516189b7e656")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "Q27")
 					(unit 2)
@@ -12424,13 +13650,17 @@
 		(lib_id "Duet3:Q_DUAL_NMOS_Power33-Device")
 		(at 109.22 128.27 0)
 		(unit 2)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005d65518c")
 		(property "Reference" "Q26"
 			(at 103.505 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12440,48 +13670,58 @@
 		)
 		(property "Value" "Q_DUAL_NMOS"
 			(at 116.5098 129.413 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SON:Fairchild_DualPower33-6_3x3mm"
 			(at 114.3 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 114.3 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 109.22 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "DMT6018LDR"
 			(at 109.22 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "3"
@@ -12503,7 +13743,7 @@
 			(uuid "ec906170-8dd7-4562-aab9-a54d92ba4959")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "Q26")
 					(unit 2)
@@ -12515,13 +13755,17 @@
 		(lib_id "Duet3:Q_DUAL_NMOS_Power33-Device")
 		(at 163.83 128.27 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005d6557aa")
 		(property "Reference" "Q25"
 			(at 158.115 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12531,48 +13775,58 @@
 		)
 		(property "Value" "Q_DUAL_NMOS"
 			(at 171.1198 129.413 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SON:Fairchild_DualPower33-6_3x3mm"
 			(at 168.91 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 168.91 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 163.83 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "DMT6018LDR"
 			(at 163.83 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12594,7 +13848,7 @@
 			(uuid "f36398b4-94bd-42d1-87a7-979d71fa2a92")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "Q25")
 					(unit 1)
@@ -12606,13 +13860,17 @@
 		(lib_id "Duet3:Q_DUAL_NMOS_Power33-Device")
 		(at 215.9 128.27 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005d666e5b")
 		(property "Reference" "Q27"
 			(at 210.185 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12622,48 +13880,58 @@
 		)
 		(property "Value" "Q_DUAL_NMOS"
 			(at 223.1898 129.413 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SON:Fairchild_DualPower33-6_3x3mm"
 			(at 220.98 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 220.98 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 215.9 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "DMT6018LDR"
 			(at 215.9 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12685,7 +13953,7 @@
 			(uuid "08108034-7a6a-49d5-9ab7-f76e2041307a")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "Q27")
 					(unit 1)
@@ -12697,13 +13965,17 @@
 		(lib_id "Duet3:Q_DUAL_NMOS_Power33-Device")
 		(at 54.61 182.88 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005d666fcb")
 		(property "Reference" "Q26"
 			(at 48.895 185.42 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12713,48 +13985,58 @@
 		)
 		(property "Value" "Q_DUAL_NMOS"
 			(at 61.8998 184.023 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Package_SON:Fairchild_DualPower33-6_3x3mm"
 			(at 59.69 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 59.69 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 54.61 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "DMT6018LDR"
 			(at 54.61 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12776,7 +14058,7 @@
 			(uuid "1e26b64f-9ee1-4d89-9de6-33803d879573")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "Q26")
 					(unit 1)
@@ -12788,13 +14070,17 @@
 		(lib_id "Device:R_Small")
 		(at 53.34 256.54 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005fd14861")
 		(property "Reference" "R116"
 			(at 51.435 256.7432 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12803,6 +14089,8 @@
 		)
 		(property "Value" "10K"
 			(at 55.0672 256.8448 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12811,15 +14099,19 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Wbry"
 			(at 53.34 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 53.34 256.54 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -12828,20 +14120,24 @@
 		)
 		(property "Description" ""
 			(at 53.34 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "RMCS0402FT10K0"
 			(at 53.34 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12851,7 +14147,7 @@
 			(uuid "8e0b55d2-28df-4a35-ad29-9758d9a69317")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "R116")
 					(unit 1)
@@ -12863,13 +14159,17 @@
 		(lib_id "74xGxx:74LVC2G34")
 		(at 154.94 172.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-0000612e91f9")
 		(property "Reference" "U12"
 			(at 162.3314 171.5516 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12879,6 +14179,8 @@
 		)
 		(property "Value" "74HCT2G34GW,125"
 			(at 158.75 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12888,38 +14190,46 @@
 		)
 		(property "Footprint" "digikey-footprints:SOT-363"
 			(at 154.94 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
 			(at 154.94 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 154.94 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "74HCT2G34GW,125"
 			(at 154.94 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -12941,7 +14251,7 @@
 			(uuid "3b6cc0ae-c06c-407e-83e7-e10d52d81bfc")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "U12")
 					(unit 1)
@@ -12953,13 +14263,17 @@
 		(lib_id "74xGxx:74LVC2G34")
 		(at 154.94 181.61 0)
 		(unit 2)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-0000612f76fb")
 		(property "Reference" "U12"
 			(at 162.56 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12969,48 +14283,58 @@
 		)
 		(property "Value" "74HCT2G34GW,125"
 			(at 162.3314 182.753 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "digikey-footprints:SOT-363"
 			(at 154.94 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
 			(at 154.94 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 154.94 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "74HCT2G34GW,125"
 			(at 154.94 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -13032,7 +14356,7 @@
 			(uuid "4836e821-9d31-42ba-984a-408b75c1a8ca")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "U12")
 					(unit 2)
@@ -13044,13 +14368,17 @@
 		(lib_id "Connector_Generic:Conn_01x03")
 		(at 212.09 58.42 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000061e01866")
 		(property "Reference" "J52"
 			(at 214.0966 57.3532 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13060,6 +14388,8 @@
 		)
 		(property "Value" "V_OUT_3-5 Select"
 			(at 214.0966 59.6646 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13069,38 +14399,46 @@
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 212.09 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 212.09 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 212.09 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "THS-03-R"
 			(at 212.09 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -13113,7 +14451,7 @@
 			(uuid "7e9f44a2-af8a-4b93-b04c-9b5cf63f85c5")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "J52")
 					(unit 1)
@@ -13126,61 +14464,73 @@
 		(lib_id "Duet3:GND")
 		(at 154.94 190.5 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061f5796f")
 		(property "Reference" "#PWR077"
 			(at 154.94 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 154.94 192.278 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 154.94 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 154.94 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 154.94 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "e8282edf-62c6-4b17-bb2a-d99d4604c050")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "#PWR077")
 					(unit 1)
@@ -13192,13 +14542,17 @@
 		(lib_id "Device:C_Small")
 		(at 175.26 160.02 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
+		(in_pos_files yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000061f57eb0")
 		(property "Reference" "C199"
 			(at 172.72 161.925 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13208,6 +14562,8 @@
 		)
 		(property "Value" "0u1 16V"
 			(at 178.435 161.925 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13217,15 +14573,19 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Wbry"
 			(at 175.26 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 175.26 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -13234,20 +14594,24 @@
 		)
 		(property "Description" ""
 			(at 175.26 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Part Number" "0402YC104KAT2A"
 			(at 175.26 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -13257,7 +14621,7 @@
 			(uuid "11e98369-b840-4718-a37a-f07ab0ecb238")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "C199")
 					(unit 1)
@@ -13270,61 +14634,73 @@
 		(lib_id "Duet3:GND")
 		(at 175.26 165.1 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061f582ad")
 		(property "Reference" "#PWR078"
 			(at 175.26 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 175.26 166.878 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 175.26 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 175.26 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 175.26 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "5045de39-3d56-4cd4-bab4-3e39bb13ea73")
 		)
 		(instances
-			(project ""
+			(project "Duet3_MB_3DP"
 				(path "/94813053-1316-4754-9fb4-4dbbf7dc780d/00000000-0000-0000-0000-00005b12c3fc"
 					(reference "#PWR078")
 					(unit 1)
