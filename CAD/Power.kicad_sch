@@ -15395,7 +15395,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM1555C1H151GA01D"
+		(property "Part Number" "GRM1555C1H151JA01D"
 			(at 83.82 95.25 0)
 			(effects
 				(font
@@ -15404,7 +15404,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C161532"
+		(property "LCSC" "C76951"
 			(at 83.82 95.25 0)
 			(effects
 				(font

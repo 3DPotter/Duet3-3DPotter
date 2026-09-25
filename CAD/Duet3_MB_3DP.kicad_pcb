@@ -63688,12 +63688,12 @@
 			)
 		)
 		(property "Description" "12V OUT"
-			(at 1.475 4.6 90)
+			(at 1.46 4.71 90)
 			(layer "F.SilkS")
 			(uuid "35e18113-fac2-468c-a88d-fafd576aeac6")
 			(effects
 				(font
-					(size 0.75 0.75)
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -72472,6 +72472,18 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "1 AMP MAX"
+		(at 59.62 115.265 0)
+		(layer "F.SilkS")
+		(uuid "73c1ac8f-b68e-4ad8-aa1c-58c6ec5c878f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "SWD"
 		(at 71.5 192.25 0)
 		(layer "F.SilkS")
@@ -78474,7 +78486,7 @@
 	(segment
 		(start 64.35 119.75)
 		(end 69.1 115)
-		(width 0.2)
+		(width 0.4)
 		(layer "F.Cu")
 		(net 5)
 		(uuid "25bc52fd-4d30-4457-b725-29bb51981785")
@@ -78498,7 +78510,7 @@
 	(segment
 		(start 69.1 115)
 		(end 69.1 107)
-		(width 0.2)
+		(width 0.4)
 		(layer "F.Cu")
 		(net 5)
 		(uuid "cdd23f34-5731-492c-b068-ebe01afe0d32")
@@ -117901,10 +117913,6 @@
 				(xy 92.2 218.1) (xy 97.1 218.1) (xy 97.1 223.1) (xy 92.2 223.1)
 			)
 		)
-	)
-	(group ""
-		(uuid "fbbda587-585c-4f5e-b2f5-86eb0db96a07")
-		(members "ed5fdaea-1703-4c45-8ac3-7e6c315de76b")
 	)
 	(group ""
 		(uuid "11cc277e-5edd-4217-b720-44ec95bc21c3")
