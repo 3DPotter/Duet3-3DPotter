@@ -1,0 +1,334 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "57067381-666e-4e6f-8a01-e998da299969")
+	(paper "A3" portrait)
+	(title_block
+		(title "Duet 3 MB 3DP")
+		(date "2026-07-23")
+		(rev "1.57")
+		(company "3DPotter")
+	)
+	(lib_symbols)
+	(text "!padne REGULATOR v=5.036V gain=0.076 p=L12.2 n=C28.2,C36.2 f=C22.2,C23.2,C24.2,C25.2 t=U24.1,U24.2,U24.3,U24.27,U24.28,U24.29"
+		(exclude_from_sim no)
+		(at 151.13 57.15 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "0f3ac11d-056b-4f23-92a3-ce3b2da754eb")
+	)
+	(text "!padne RESISTANCE r=0.04 a=F9.1 b=F9.2"
+		(exclude_from_sim no)
+		(at 60.96 195.58 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "1ce454cf-38c2-425a-8f4a-fd90d6a66217")
+	)
+	(text "!padne RESISTANCE r=0.21 a=D29.1 b=D29.2"
+		(exclude_from_sim no)
+		(at 62.23 163.83 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "24288699-dce3-44ee-9d98-483f4a18e7dd")
+	)
+	(text "VIN (75V for this sheet)"
+		(exclude_from_sim no)
+		(at 31.75 31.75 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "3b46d0d9-b597-474a-bce3-415657994630")
+	)
+	(text "Path A.5v"
+		(exclude_from_sim no)
+		(at 24.13 100.33 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "3b5449af-a4f8-4d86-b268-b1cf5d72844c")
+	)
+	(text "Templates"
+		(exclude_from_sim no)
+		(at 91.44 15.24 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "46014094-cd15-4c70-b95f-d75f57000248")
+	)
+	(text "!padne CURRENT i=150mA t=U11.5,U11.30,U11.43,U11.72,U11.80,U11.96,U11.134 f=U11.44,U11.61,U11.95,U11.115,U11.135,U11.138"
+		(exclude_from_sim no)
+		(at 147.32 85.09 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "50872364-8b2b-4925-9bba-07b0e40e5af8")
+	)
+	(text "!padne RESISTANCE r=0.21 a=D36.2 b=D36.1"
+		(exclude_from_sim no)
+		(at 63.5 190.5 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "53ea2bb6-45d2-4e27-a5c9-9331ff5d0b76")
+	)
+	(text "!padne CURRENT i=0.2A t=J19.5 f=J19.3"
+		(exclude_from_sim no)
+		(at 58.42 179.07 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "763a487b-224b-4659-bbc1-da1f07ba14ba")
+	)
+	(text "!padne RESISTANCE r=0.04 a=F4.1 b=F4.2"
+		(exclude_from_sim no)
+		(at 59.69 168.91 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "786ec871-3752-4d58-9acf-775a1c1fce18")
+	)
+	(text "!padne CURRENT i=2A t=J16.1 f=J16.2"
+		(exclude_from_sim no)
+		(at 55.88 173.99 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "812a540f-f72a-4cb6-a87b-3996d47a3331")
+	)
+	(text "!padne REGULATOR v=3.3V gain=1 p=U4.3 n=C43.2 f=C204.2 t=U4.1"
+		(exclude_from_sim no)
+		(at 85.09 80.01 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "84ae1374-3f16-4a36-a396-499260a747a4")
+	)
+	(text "!padne RESISTANCE r=0.84 a=D22.1 b=D22.2"
+		(exclude_from_sim no)
+		(at 60.96 46.99 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "87fb30b3-7f43-48a3-896a-0f10fa22042a")
+	)
+	(text "Path Flows Down"
+		(exclude_from_sim no)
+		(at 26.67 27.94 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "8c3426a2-28b6-40d5-ad1b-339366152688")
+	)
+	(text "Path C (12V)"
+		(exclude_from_sim no)
+		(at 26.67 185.42 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "99ebdb5f-502c-4386-92de-9fa22526afcd")
+	)
+	(text "padne RESISTANCE r= a= b="
+		(exclude_from_sim no)
+		(at 166.37 21.59 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "ae36ea88-190f-4c7d-9e73-ffeeb5bbca93")
+	)
+	(text "!padne VOLTAGE v=75V p=J18.2 n=J18.1"
+		(exclude_from_sim no)
+		(at 57.15 35.56 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "aea84485-4312-407b-80ea-26c4e68d17f5")
+	)
+	(text "!padne REGULATOR v=12V gain=2.82 p=C38.1 n=C38.2 f=C39.2,C40.2 t=L1.1"
+		(exclude_from_sim no)
+		(at 95.25 200.66 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "b85477f9-4b3c-4f5a-b421-06c5571cab85")
+	)
+	(text "!padne RESISTANCE r=0.057 a=L2.2 b=L2.1"
+		(exclude_from_sim no)
+		(at 59.69 52.07 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "ba615afb-6e35-4739-9030-85ded0cda2ab")
+	)
+	(text "!padne CURRENT i=1A t=J22.1 f=J22.2"
+		(exclude_from_sim no)
+		(at 57.15 205.74 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "ca37ca14-86da-4a30-b905-61dd6624ffbe")
+	)
+	(text "!padne CURRENT i=0.08A t=U26.1 f=U26.11,U26.12"
+		(exclude_from_sim no)
+		(at 68.58 109.22 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "d0380a18-768f-487f-a6dc-cf346f526549")
+	)
+	(text "padne CURRENT i= t= f="
+		(exclude_from_sim no)
+		(at 106.68 21.59 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "d1d1afd1-2099-4ce8-aeef-808b5da4b5d9")
+	)
+	(text "padne REGULATOR v= gain= p= n= f= t="
+		(exclude_from_sim no)
+		(at 241.3 21.59 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "d8498919-9051-4b9b-b2b2-21b26262f867")
+	)
+	(text "Path B (5VEXT)"
+		(exclude_from_sim no)
+		(at 26.67 160.02 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "d90d3daf-302a-4c0f-bf6b-1e4143944b18")
+	)
+	(text "!padne CURRENT i=0.07A t=U13.3 f=U13.2"
+		(exclude_from_sim no)
+		(at 59.69 119.38 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "df02e536-4bdd-4428-88ec-f3701e8a8e75")
+	)
+	(text "!padne CURRENT i=0.08A t=U14.1 f=U14.11,U14.12"
+		(exclude_from_sim no)
+		(at 68.58 104.14 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "e2b317b6-58ca-4716-8003-6ca891e36f19")
+	)
+	(text "padne VOLTAGE v= p= n="
+		(exclude_from_sim no)
+		(at 44.45 21.59 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "e646ad75-0717-4c4f-b685-85c5336cab68")
+	)
+	(text "!padne CURRENT i=0.08A t=U25.1 f=U25.11,U25.12"
+		(exclude_from_sim no)
+		(at 68.58 114.3 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "ef524298-cda1-4ed6-b1e2-c649e7bac388")
+	)
+	(text "!padne RESISTANCE r=0.4 a=D25.1 b=D25.2"
+		(exclude_from_sim no)
+		(at 59.69 74.93 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "f33f9e25-f8fc-48d4-bdd9-2b1ee133a4d2")
+	)
+	(text "!padne RESISTANCE r=0.006 a=R60.2 b=R60.1"
+		(exclude_from_sim no)
+		(at 62.23 62.23 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "f45e40d4-a0d9-4538-948f-165302c9fe0a")
+	)
+	(text "!padne RESISTANCE r=0.115 a=F1.1 b=F5.1"
+		(exclude_from_sim no)
+		(at 59.69 41.91 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "f9dbc131-738f-418e-a3ee-7b3b2011763b")
+	)
+	(text "Path A (5VINT -> 3.3V)"
+		(exclude_from_sim no)
+		(at 31.75 71.12 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "ff14ed39-a75f-401c-960b-2158d8331a5b")
+	)
+)
