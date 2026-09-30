@@ -56,9 +56,9 @@
 		)
 		(uuid "316ab0cf-fc3d-4175-9e42-3e698d7d2aa7")
 	)
-	(text "Part ordering info:\nCaps from Murata's GCM series or GRT series\nResistors from YAGEO's AC series or AT series"
+	(text "Part ordering info:\nCaps from Murata's GCM series or GRT series, do not GRM unless GCM and GRT not usable\nResistors from YAGEO's AC series or AF series, do not RC unless AC and AF not usable"
 		(exclude_from_sim no)
-		(at 101.346 153.162 0)
+		(at 49.276 215.392 0)
 		(effects
 			(font
 				(size 3.048 3.048)
@@ -121,6 +121,16 @@
 			(justify left bottom)
 		)
 		(uuid "d3d6f656-5f2d-489d-b978-0914e635c1c3")
+	)
+	(text "Quality (Higher)--->\nRC<AC<AF\nGRM<GRT<GCM"
+		(exclude_from_sim no)
+		(at 133.35 233.68 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "ef7f2720-dc87-47ba-9ffe-d9bff841c848")
 	)
 	(sheet
 		(at 15.24 22.86)

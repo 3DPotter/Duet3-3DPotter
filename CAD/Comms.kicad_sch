@@ -15647,7 +15647,7 @@
 				)
 			)
 		)
-		(property "Part Number" "AC0402FR-0727KL"
+		(property "Part Number" "AC0402FR-0727KL or AF0402FR-0727KL"
 			(at 59.69 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -22265,7 +22265,7 @@
 				)
 			)
 		)
-		(property "Part Number" "AC0402FR-0727KL"
+		(property "Part Number" "AC0402FR-0727KL or AF0402FR-0727KL"
 			(at 266.7 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -23184,7 +23184,7 @@
 				)
 			)
 		)
-		(property "Part Number" "AC0402FR-0727KL"
+		(property "Part Number" "AC0402FR-0727KL or AF0402FR-0727KL"
 			(at 181.61 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -23643,7 +23643,7 @@
 				)
 			)
 		)
-		(property "Part Number" "AC0402FR-0727KL"
+		(property "Part Number" "AC0402FR-0727KL or AF0402FR-0727KL"
 			(at 175.26 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -24710,7 +24710,7 @@
 				)
 			)
 		)
-		(property "Part Number" "AC0402FR-0727KL"
+		(property "Part Number" "AC0402FR-0727KL or AF0402FR-0727KL"
 			(at 261.62 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -26245,7 +26245,7 @@
 				)
 			)
 		)
-		(property "Part Number" "74LVC2G125HD4-7"
+		(property "Part Number" "74LVC2G125HD4-7 or 74LVC2G125GT,115"
 			(at 201.93 194.945 0)
 			(hide yes)
 			(show_name no)

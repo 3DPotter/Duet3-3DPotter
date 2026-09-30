@@ -974,7 +974,7 @@
         "uuid": "94813053-1316-4754-9fb4-4dbbf7dc780d"
       }
     ],
-    "used_designators": "R85,#PWR46",
+    "used_designators": "R85-86,#PWR46,C41",
     "variants": []
   },
   "sheets": [

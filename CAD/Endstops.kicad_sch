@@ -4602,7 +4602,7 @@
 				)
 			)
 		)
-		(property "Part Number" "AC0402FR-0727KL"
+		(property "Part Number" "AC0402FR-0727KL or AF0402FR-0727KL"
 			(at 40.64 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -4907,7 +4907,7 @@
 				)
 			)
 		)
-		(property "Part Number" "AC0402FR-0727KL"
+		(property "Part Number" "AC0402FR-0727KL or AF0402FR-0727KL"
 			(at 71.12 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -5108,7 +5108,7 @@
 				)
 			)
 		)
-		(property "Part Number" "AC0402FR-0727KL"
+		(property "Part Number" "AC0402FR-0727KL or AF0402FR-0727KL"
 			(at 109.22 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -8360,7 +8360,7 @@
 				)
 			)
 		)
-		(property "Part Number" "AC0402FR-0727KL"
+		(property "Part Number" "AC0402FR-0727KL or AF0402FR-0727KL"
 			(at 40.64 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -8561,7 +8561,7 @@
 				)
 			)
 		)
-		(property "Part Number" "AC0402FR-0727KL"
+		(property "Part Number" "AC0402FR-0727KL or AF0402FR-0727KL"
 			(at 71.12 45.72 0)
 			(hide yes)
 			(show_name no)
