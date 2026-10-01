@@ -14764,7 +14764,7 @@
 			)
 		)
 	)
-	(global_label "5V_EXT"
+	(global_label "+5V_EXT"
 		(shape input)
 		(at 101.6 164.465 180)
 		(fields_autoplaced yes)
@@ -14811,7 +14811,7 @@
 			)
 		)
 	)
-	(global_label "5V_EXT_INPUT"
+	(global_label "+5V_EXT_INPUT"
 		(shape input)
 		(at 32.385 44.45 180)
 		(fields_autoplaced yes)
@@ -15261,7 +15261,7 @@
 			)
 		)
 	)
-	(global_label "5V_EXT"
+	(global_label "+5V_EXT"
 		(shape input)
 		(at 101.6 128.27 180)
 		(fields_autoplaced yes)
@@ -15381,7 +15381,7 @@
 			)
 		)
 	)
-	(global_label "5V_EXT"
+	(global_label "+5V_EXT"
 		(shape input)
 		(at 105.41 187.96 180)
 		(fields_autoplaced yes)
@@ -15549,7 +15549,7 @@
 			)
 		)
 	)
-	(global_label "5V_SBC"
+	(global_label "+5V_SBC"
 		(shape input)
 		(at 214.63 47.625 0)
 		(fields_autoplaced yes)
@@ -15573,7 +15573,7 @@
 			)
 		)
 	)
-	(global_label "5V_EXT"
+	(global_label "+5V_EXT"
 		(shape input)
 		(at 141.605 97.79 180)
 		(fields_autoplaced yes)
@@ -16663,7 +16663,7 @@
 			)
 		)
 	)
-	(global_label "5V_EXT"
+	(global_label "+5V_EXT"
 		(shape input)
 		(at 101.6 92.075 180)
 		(fields_autoplaced yes)
@@ -17042,7 +17042,7 @@
 			)
 		)
 	)
-	(global_label "5V_EXT"
+	(global_label "+5V_EXT"
 		(shape input)
 		(at 198.12 20.955 180)
 		(fields_autoplaced yes)
@@ -17254,7 +17254,7 @@
 			)
 		)
 	)
-	(global_label "5V_EXT"
+	(global_label "+5V_EXT"
 		(shape input)
 		(at 138.43 137.16 90)
 		(fields_autoplaced yes)
@@ -17419,7 +17419,7 @@
 			)
 		)
 	)
-	(global_label "5V_EXT"
+	(global_label "+5V_EXT"
 		(shape input)
 		(at 101.6 109.855 180)
 		(fields_autoplaced yes)
@@ -17584,7 +17584,7 @@
 			)
 		)
 	)
-	(global_label "12V_BUCK_OUT"
+	(global_label "+12V_BUCK_OUT"
 		(shape input)
 		(at 39.37 161.29 180)
 		(fields_autoplaced yes)
@@ -18035,7 +18035,7 @@
 			)
 		)
 	)
-	(global_label "5V_EXT"
+	(global_label "+5V_EXT"
 		(shape input)
 		(at 101.6 73.66 180)
 		(fields_autoplaced yes)
@@ -18177,7 +18177,7 @@
 			)
 		)
 	)
-	(global_label "5V_EXT"
+	(global_label "+5V_EXT"
 		(shape input)
 		(at 101.6 146.685 180)
 		(fields_autoplaced yes)

@@ -1,0 +1,1244 @@
+{
+  "version": "2.0",
+  "rails": [
+    {
+      "net_name": "+12V_BUCK_OUT",
+      "nominal_voltage": 12.0,
+      "sources": [],
+      "loads": [
+        {
+          "ref_des": "J22",
+          "total_current": 0.8,
+          "pad_names": [
+            "1"
+          ],
+          "distribution_mode": "UNIFORM",
+          "thermal_mode": "AUTO"
+        }
+      ],
+      "child_regulators": []
+    },
+    {
+      "net_name": "/Power/+5v_to_buck_fuse",
+      "nominal_voltage": 4.6,
+      "sources": [],
+      "loads": [],
+      "child_regulators": []
+    },
+    {
+      "net_name": "/Power/+5V_EXT_fuse",
+      "nominal_voltage": 4.7,
+      "sources": [],
+      "loads": [],
+      "child_regulators": [
+        {
+          "name": "F4 (+5V_EXT)",
+          "input_rail_name": "/Power/+5V_EXT_fuse",
+          "input_ref_des": "F4",
+          "input_pad_names": [
+            "2"
+          ],
+          "output_rail_name": "+5V_EXT",
+          "output_ref_des": "F4",
+          "output_pad_names": [
+            "1"
+          ],
+          "reg_type": "LINEAR",
+          "efficiency": 1.0,
+          "thermal_ref_des": "F4",
+          "loss_model": {}
+        }
+      ]
+    },
+    {
+      "net_name": "/Power/+5V_Common",
+      "nominal_voltage": 5.0,
+      "sources": [],
+      "loads": [],
+      "child_regulators": [
+        {
+          "name": "D25 (+5V_INT)",
+          "input_rail_name": "/Power/+5V_Common",
+          "input_ref_des": "D25",
+          "input_pad_names": [
+            "2"
+          ],
+          "output_rail_name": "+5V_INT",
+          "output_ref_des": "D25",
+          "output_pad_names": [
+            "1"
+          ],
+          "reg_type": "LINEAR",
+          "efficiency": 1.0,
+          "thermal_ref_des": "D25",
+          "loss_model": {}
+        },
+        {
+          "name": "D29 (/Power/+5V_EXT_fuse)",
+          "input_rail_name": "/Power/+5V_Common",
+          "input_ref_des": "D29",
+          "input_pad_names": [
+            "2"
+          ],
+          "output_rail_name": "/Power/+5V_EXT_fuse",
+          "output_ref_des": "D29",
+          "output_pad_names": [
+            "1"
+          ],
+          "reg_type": "LINEAR",
+          "efficiency": 1.0,
+          "thermal_ref_des": "D29",
+          "loss_model": {}
+        },
+        {
+          "name": "F9 (+5V_TO_BUCK)",
+          "input_rail_name": "/Power/+5V_Common",
+          "input_ref_des": "F9",
+          "input_pad_names": [
+            "2"
+          ],
+          "output_rail_name": "+5V_TO_BUCK",
+          "output_ref_des": "F9",
+          "output_pad_names": [
+            "1"
+          ],
+          "reg_type": "LINEAR",
+          "efficiency": 1.0,
+          "thermal_ref_des": "F9",
+          "loss_model": {}
+        }
+      ]
+    },
+    {
+      "net_name": "+5V_TO_BUCK",
+      "nominal_voltage": 5.0,
+      "sources": [],
+      "loads": [],
+      "child_regulators": [
+        {
+          "name": "U10 -> D3 (+12V_BUCK_OUT)",
+          "input_rail_name": "+5V_TO_BUCK",
+          "input_ref_des": "U10",
+          "input_pad_names": [
+            "5"
+          ],
+          "output_rail_name": "+12V_BUCK_OUT",
+          "output_ref_des": "D3",
+          "output_pad_names": [
+            "1"
+          ],
+          "reg_type": "SWITCHING",
+          "efficiency": 0.87,
+          "thermal_ref_des": "U10",
+          "loss_model": {}
+        }
+      ]
+    },
+    {
+      "net_name": "+5V_SBC",
+      "nominal_voltage": 5.0,
+      "sources": [],
+      "loads": [],
+      "child_regulators": []
+    },
+    {
+      "net_name": "+5V_INT",
+      "nominal_voltage": 4.6,
+      "sources": [],
+      "loads": [
+        {
+          "ref_des": "U13",
+          "total_current": 0.07,
+          "pad_names": [
+            "3"
+          ],
+          "distribution_mode": "UNIFORM",
+          "thermal_mode": "AUTO"
+        },
+        {
+          "ref_des": "U14",
+          "total_current": 0.08,
+          "pad_names": [
+            "1"
+          ],
+          "distribution_mode": "UNIFORM",
+          "thermal_mode": "AUTO"
+        },
+        {
+          "ref_des": "U25",
+          "total_current": 0.08,
+          "pad_names": [
+            "1"
+          ],
+          "distribution_mode": "UNIFORM",
+          "thermal_mode": "AUTO"
+        },
+        {
+          "ref_des": "U26",
+          "total_current": 0.08,
+          "pad_names": [
+            "1"
+          ],
+          "distribution_mode": "UNIFORM",
+          "thermal_mode": "AUTO"
+        }
+      ],
+      "child_regulators": [
+        {
+          "name": "U4 (+3.3V)",
+          "input_rail_name": "+5V_INT",
+          "input_ref_des": "U4",
+          "input_pad_names": [
+            "1"
+          ],
+          "output_rail_name": "+3.3V",
+          "output_ref_des": "U4",
+          "output_pad_names": [
+            "3"
+          ],
+          "reg_type": "LINEAR",
+          "efficiency": 1.0,
+          "thermal_ref_des": "U4",
+          "loss_model": {}
+        }
+      ]
+    },
+    {
+      "net_name": "+5V_EXT",
+      "nominal_voltage": 4.7,
+      "sources": [],
+      "loads": [
+        {
+          "ref_des": "J16",
+          "total_current": 0.4,
+          "pad_names": [
+            "1"
+          ],
+          "distribution_mode": "UNIFORM",
+          "thermal_mode": "AUTO"
+        },
+        {
+          "ref_des": "J19",
+          "total_current": 0.2,
+          "pad_names": [
+            "5"
+          ],
+          "distribution_mode": "UNIFORM",
+          "thermal_mode": "AUTO"
+        }
+      ],
+      "child_regulators": []
+    },
+    {
+      "net_name": "/Comms/VDDA_3V3",
+      "nominal_voltage": 3.3,
+      "sources": [],
+      "loads": [
+        {
+          "ref_des": "U16",
+          "total_current": 0.06,
+          "pad_names": [
+            "2",
+            "14"
+          ],
+          "distribution_mode": "UNIFORM",
+          "thermal_mode": "AUTO"
+        }
+      ],
+      "child_regulators": []
+    },
+    {
+      "net_name": "+3.3V",
+      "nominal_voltage": 3.3,
+      "sources": [],
+      "loads": [
+        {
+          "ref_des": "U11",
+          "total_current": 0.15,
+          "pad_names": [
+            "5",
+            "30",
+            "43",
+            "72",
+            "80",
+            "96",
+            "134"
+          ],
+          "distribution_mode": "UNIFORM",
+          "thermal_mode": "AUTO"
+        }
+      ],
+      "child_regulators": [
+        {
+          "name": "L10 (/Comms/VDDA_3V3)",
+          "input_rail_name": "+3.3V",
+          "input_ref_des": "L10",
+          "input_pad_names": [
+            "1"
+          ],
+          "output_rail_name": "/Comms/VDDA_3V3",
+          "output_ref_des": "L10",
+          "output_pad_names": [
+            "2"
+          ],
+          "reg_type": "LINEAR",
+          "efficiency": 1.0,
+          "thermal_ref_des": "L10",
+          "loss_model": {}
+        }
+      ]
+    },
+    {
+      "net_name": "SBC_3.3V",
+      "nominal_voltage": 3.0,
+      "sources": [],
+      "loads": [],
+      "child_regulators": []
+    },
+    {
+      "net_name": "GND",
+      "nominal_voltage": 0.0,
+      "sources": [],
+      "loads": [],
+      "child_regulators": []
+    },
+    {
+      "net_name": "V_IN",
+      "nominal_voltage": 75.0,
+      "sources": [
+        {
+          "ref_des": "J18",
+          "pad_names": [
+            "2"
+          ]
+        }
+      ],
+      "loads": [],
+      "child_regulators": [
+        {
+          "name": "F1 -> F5 (V_FUSED)",
+          "input_rail_name": "V_IN",
+          "input_ref_des": "F1",
+          "input_pad_names": [
+            "1",
+            "1"
+          ],
+          "output_rail_name": "V_FUSED",
+          "output_ref_des": "F5",
+          "output_pad_names": [
+            "1",
+            "1"
+          ],
+          "reg_type": "LINEAR",
+          "efficiency": 1.0,
+          "thermal_ref_des": "F1",
+          "loss_model": {}
+        }
+      ]
+    },
+    {
+      "net_name": "V_FUSED",
+      "nominal_voltage": 74.8,
+      "sources": [],
+      "loads": [
+        {
+          "ref_des": "J2",
+          "total_current": 1.0,
+          "pad_names": [
+            "1"
+          ],
+          "distribution_mode": "UNIFORM",
+          "thermal_mode": "AUTO"
+        }
+      ],
+      "child_regulators": [
+        {
+          "name": "D22 -> L2 (/Power/L2)",
+          "input_rail_name": "V_FUSED",
+          "input_ref_des": "D22",
+          "input_pad_names": [
+            "2"
+          ],
+          "output_rail_name": "/Power/L2",
+          "output_ref_des": "L2",
+          "output_pad_names": [
+            "1"
+          ],
+          "reg_type": "LINEAR",
+          "efficiency": 1.0,
+          "thermal_ref_des": "D22",
+          "loss_model": {}
+        }
+      ]
+    },
+    {
+      "net_name": "/Power/L2",
+      "nominal_voltage": 74.3,
+      "sources": [],
+      "loads": [],
+      "child_regulators": [
+        {
+          "name": "L2 (/Power/VIN1)",
+          "input_rail_name": "/Power/L2",
+          "input_ref_des": "L2",
+          "input_pad_names": [
+            "1"
+          ],
+          "output_rail_name": "/Power/VIN1",
+          "output_ref_des": "L2",
+          "output_pad_names": [
+            "2"
+          ],
+          "reg_type": "LINEAR",
+          "efficiency": 1.0,
+          "thermal_ref_des": "L2",
+          "loss_model": {}
+        }
+      ]
+    },
+    {
+      "net_name": "/Power/VIN1",
+      "nominal_voltage": 74.3,
+      "sources": [],
+      "loads": [],
+      "child_regulators": [
+        {
+          "name": "U24 -> R60 (/Power/+5V_Common)",
+          "input_rail_name": "/Power/VIN1",
+          "input_ref_des": "U24",
+          "input_pad_names": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "2",
+            "3",
+            "27",
+            "28",
+            "29"
+          ],
+          "output_rail_name": "/Power/+5V_Common",
+          "output_ref_des": "R60",
+          "output_pad_names": [
+            "2"
+          ],
+          "reg_type": "SWITCHING",
+          "efficiency": 0.874,
+          "thermal_ref_des": "U24",
+          "loss_model": {}
+        }
+      ]
+    }
+  ],
+  "ac_profiles": {
+    "+12V_BUCK_OUT": {
+      "rail_name": "+12V_BUCK_OUT",
+      "ground_net_name": "GND",
+      "frequency_start_hz": 1000.0,
+      "frequency_stop_hz": 100000000.0,
+      "frequency_points": 121,
+      "mesh_resolution_mm": 0.5,
+      "target_impedance_ohm": 0.05,
+      "source": {
+        "ref_des": "D3",
+        "rail_pad_names": [
+          "1"
+        ],
+        "ground_pad_names": [],
+        "resistance_ohm": 0.01,
+        "inductance_h": 1e-09
+      },
+      "measurement_port": {
+        "ref_des": "J22",
+        "rail_pad_names": [
+          "1"
+        ],
+        "ground_pad_names": [
+          "2"
+        ]
+      },
+      "capacitors": [
+        {
+          "ref_des": "C37",
+          "rail_pad_names": [
+            "1"
+          ],
+          "ground_pad_names": [
+            "2"
+          ],
+          "capacitance_f": 1e-07,
+          "esr_ohm": 0.01,
+          "esl_h": 8e-10,
+          "enabled": false,
+          "candidate": true,
+          "model_source": "value-and-package-estimate"
+        },
+        {
+          "ref_des": "C38",
+          "rail_pad_names": [
+            "1"
+          ],
+          "ground_pad_names": [
+            "2"
+          ],
+          "capacitance_f": 1e-07,
+          "esr_ohm": 0.01,
+          "esl_h": 8e-10,
+          "enabled": false,
+          "candidate": true,
+          "model_source": "value-and-package-estimate"
+        }
+      ],
+      "optimizer_values_f": [
+        1e-08,
+        4.7e-08,
+        1e-07,
+        4.7e-07,
+        1e-06,
+        4.7e-06,
+        1e-05
+      ],
+      "optimizer_max_additions": 8
+    }
+  },
+  "thermal_profile": {
+    "ambient_c": 25.0,
+    "grid_size_mm": 0.5,
+    "airflow": {
+      "mode": "FORCED",
+      "velocity_m_s": 0.3,
+      "direction_deg": 15.0,
+      "custom_h_w_m2k": 10.0,
+      "expose_top": true,
+      "expose_bottom": true,
+      "expose_edges": true
+    },
+    "include_radiation": true,
+    "emissivity": 0.9,
+    "include_dc_copper_losses": true,
+    "color_map": "inferno",
+    "color_scale_minimum_mode": "AUTO",
+    "color_scale_minimum_c": null,
+    "color_scale_maximum_mode": "AUTO",
+    "color_scale_maximum_c": null,
+    "show_internal_copper_layers": true,
+    "coupled_iterations": 10,
+    "convergence_c": 0.1,
+    "relaxation": 0.6,
+    "copper_temp_coefficient_per_c": 0.00393,
+    "components": [
+      {
+        "ref_des": "D22",
+        "power_w": 0.1354672827280457,
+        "width_mm": 3.0,
+        "depth_mm": 3.0,
+        "height_mm": 1.0,
+        "theta_jb_c_per_w": 20.0,
+        "max_junction_c": 125.0,
+        "enabled": true,
+        "model_source": "regulator-loss",
+        "geometry_source": "estimate",
+        "thermal_source": "estimate",
+        "thermal_condition": "",
+        "parameter_provenance": {}
+      },
+      {
+        "ref_des": "D25",
+        "power_w": 0.20800000000000018,
+        "width_mm": 3.0,
+        "depth_mm": 3.0,
+        "height_mm": 1.0,
+        "theta_jb_c_per_w": 20.0,
+        "max_junction_c": 125.0,
+        "enabled": true,
+        "model_source": "regulator-loss",
+        "geometry_source": "estimate",
+        "thermal_source": "estimate",
+        "thermal_condition": "",
+        "parameter_provenance": {}
+      },
+      {
+        "ref_des": "D29",
+        "power_w": 0.18,
+        "width_mm": 3.0,
+        "depth_mm": 3.0,
+        "height_mm": 1.0,
+        "theta_jb_c_per_w": 30.0,
+        "max_junction_c": 125.0,
+        "enabled": true,
+        "model_source": "user",
+        "geometry_source": "estimate",
+        "thermal_source": "estimate",
+        "thermal_condition": "",
+        "parameter_provenance": {}
+      },
+      {
+        "ref_des": "D36",
+        "power_w": 1.1994,
+        "width_mm": 3.0,
+        "depth_mm": 3.0,
+        "height_mm": 1.0,
+        "theta_jb_c_per_w": 30.0,
+        "max_junction_c": 125.0,
+        "enabled": true,
+        "model_source": "user",
+        "geometry_source": "estimate",
+        "thermal_source": "estimate",
+        "thermal_condition": "",
+        "parameter_provenance": {}
+      },
+      {
+        "ref_des": "F1",
+        "power_w": 0.25418691309122193,
+        "width_mm": 3.0,
+        "depth_mm": 3.0,
+        "height_mm": 1.0,
+        "theta_jb_c_per_w": 20.0,
+        "max_junction_c": 125.0,
+        "enabled": true,
+        "model_source": "regulator-loss",
+        "geometry_source": "estimate",
+        "thermal_source": "estimate",
+        "thermal_condition": "",
+        "parameter_provenance": {}
+      },
+      {
+        "ref_des": "J16",
+        "power_w": 0.0,
+        "width_mm": 3.0,
+        "depth_mm": 3.0,
+        "height_mm": 1.0,
+        "theta_jb_c_per_w": 20.0,
+        "max_junction_c": 125.0,
+        "enabled": true,
+        "model_source": "power-tree-external-load",
+        "geometry_source": "estimate",
+        "thermal_source": "estimate",
+        "thermal_condition": "",
+        "parameter_provenance": {}
+      },
+      {
+        "ref_des": "J19",
+        "power_w": 0.0,
+        "width_mm": 3.0,
+        "depth_mm": 3.0,
+        "height_mm": 1.0,
+        "theta_jb_c_per_w": 20.0,
+        "max_junction_c": 125.0,
+        "enabled": true,
+        "model_source": "power-tree-external-load",
+        "geometry_source": "estimate",
+        "thermal_source": "estimate",
+        "thermal_condition": "",
+        "parameter_provenance": {}
+      },
+      {
+        "ref_des": "J2",
+        "power_w": 0.0,
+        "width_mm": 3.0,
+        "depth_mm": 3.0,
+        "height_mm": 1.0,
+        "theta_jb_c_per_w": 20.0,
+        "max_junction_c": 125.0,
+        "enabled": true,
+        "model_source": "power-tree-external-load",
+        "geometry_source": "estimate",
+        "thermal_source": "estimate",
+        "thermal_condition": "",
+        "parameter_provenance": {}
+      },
+      {
+        "ref_des": "J22",
+        "power_w": 0.0,
+        "width_mm": 3.0,
+        "depth_mm": 3.0,
+        "height_mm": 1.0,
+        "theta_jb_c_per_w": 20.0,
+        "max_junction_c": 125.0,
+        "enabled": true,
+        "model_source": "power-tree-external-load",
+        "geometry_source": "estimate",
+        "thermal_source": "estimate",
+        "thermal_condition": "",
+        "parameter_provenance": {}
+      },
+      {
+        "ref_des": "U10",
+        "power_w": 0.717241,
+        "width_mm": 3.0,
+        "depth_mm": 3.0,
+        "height_mm": 1.0,
+        "theta_jb_c_per_w": 20.0,
+        "max_junction_c": 150.0,
+        "enabled": true,
+        "model_source": "user",
+        "geometry_source": "estimate",
+        "thermal_source": "estimate",
+        "thermal_condition": "",
+        "parameter_provenance": {}
+      },
+      {
+        "ref_des": "U11",
+        "power_w": 0.49499999999999994,
+        "width_mm": 3.0,
+        "depth_mm": 3.0,
+        "height_mm": 1.0,
+        "theta_jb_c_per_w": 20.0,
+        "max_junction_c": 125.0,
+        "enabled": true,
+        "model_source": "power-tree-load",
+        "geometry_source": "estimate",
+        "thermal_source": "estimate",
+        "thermal_condition": "",
+        "parameter_provenance": {}
+      },
+      {
+        "ref_des": "U13",
+        "power_w": 0.322,
+        "width_mm": 3.0,
+        "depth_mm": 3.0,
+        "height_mm": 1.0,
+        "theta_jb_c_per_w": 20.0,
+        "max_junction_c": 125.0,
+        "enabled": true,
+        "model_source": "power-tree-load",
+        "geometry_source": "estimate",
+        "thermal_source": "estimate",
+        "thermal_condition": "",
+        "parameter_provenance": {}
+      },
+      {
+        "ref_des": "U14",
+        "power_w": 0.368,
+        "width_mm": 3.0,
+        "depth_mm": 3.0,
+        "height_mm": 1.0,
+        "theta_jb_c_per_w": 20.0,
+        "max_junction_c": 125.0,
+        "enabled": true,
+        "model_source": "power-tree-load",
+        "geometry_source": "estimate",
+        "thermal_source": "estimate",
+        "thermal_condition": "",
+        "parameter_provenance": {}
+      },
+      {
+        "ref_des": "U16",
+        "power_w": 0.19799999999999998,
+        "width_mm": 3.0,
+        "depth_mm": 3.0,
+        "height_mm": 1.0,
+        "theta_jb_c_per_w": 20.0,
+        "max_junction_c": 125.0,
+        "enabled": true,
+        "model_source": "power-tree-load",
+        "geometry_source": "estimate",
+        "thermal_source": "estimate",
+        "thermal_condition": "",
+        "parameter_provenance": {}
+      },
+      {
+        "ref_des": "U24",
+        "power_w": 1.69618,
+        "width_mm": 3.0,
+        "depth_mm": 3.0,
+        "height_mm": 1.0,
+        "theta_jb_c_per_w": 11.7,
+        "max_junction_c": 150.0,
+        "enabled": true,
+        "model_source": "user",
+        "geometry_source": "estimate",
+        "thermal_source": "estimate",
+        "thermal_condition": "",
+        "parameter_provenance": {}
+      },
+      {
+        "ref_des": "U25",
+        "power_w": 0.368,
+        "width_mm": 3.0,
+        "depth_mm": 3.0,
+        "height_mm": 1.0,
+        "theta_jb_c_per_w": 20.0,
+        "max_junction_c": 125.0,
+        "enabled": true,
+        "model_source": "power-tree-load",
+        "geometry_source": "estimate",
+        "thermal_source": "estimate",
+        "thermal_condition": "",
+        "parameter_provenance": {}
+      },
+      {
+        "ref_des": "U26",
+        "power_w": 0.368,
+        "width_mm": 3.0,
+        "depth_mm": 3.0,
+        "height_mm": 1.0,
+        "theta_jb_c_per_w": 20.0,
+        "max_junction_c": 125.0,
+        "enabled": true,
+        "model_source": "power-tree-load",
+        "geometry_source": "estimate",
+        "thermal_source": "estimate",
+        "thermal_condition": "",
+        "parameter_provenance": {}
+      },
+      {
+        "ref_des": "U4",
+        "power_w": 0.273,
+        "width_mm": 3.0,
+        "depth_mm": 3.0,
+        "height_mm": 1.0,
+        "theta_jb_c_per_w": 20.0,
+        "max_junction_c": 150.0,
+        "enabled": true,
+        "model_source": "user",
+        "geometry_source": "estimate",
+        "thermal_source": "estimate",
+        "thermal_condition": "",
+        "parameter_provenance": {}
+      }
+    ]
+  },
+  "cfd_profile": {
+    "ambient_c": 25.0,
+    "geometry": {
+      "width_mm": 120.0,
+      "depth_mm": 100.0,
+      "height_mm": 50.0,
+      "board_orientation": "XY",
+      "board_offset_x_mm": 0.0,
+      "board_offset_y_mm": 0.0,
+      "board_offset_z_mm": 15.0,
+      "wall_heat_transfer_w_m2k": 5.0
+    },
+    "fluid": {
+      "density_kg_m3": 1.184,
+      "dynamic_viscosity_pa_s": 1.85e-05,
+      "heat_capacity_j_kgk": 1007.0,
+      "conductivity_w_mk": 0.0262,
+      "thermal_expansion_per_k": 0.00335
+    },
+    "solver": {
+      "cell_size_mm": 5.0,
+      "max_iterations": 250,
+      "tolerance": 0.0001,
+      "relaxation": 0.45,
+      "pseudo_time_step_s": 0.02,
+      "pressure_iterations": 60,
+      "include_buoyancy": true,
+      "gravity_x_m_s2": 0.0,
+      "gravity_y_m_s2": 0.0,
+      "gravity_z_m_s2": -9.81,
+      "max_cells": 250000
+    },
+    "patches": [],
+    "use_phase3_heat_sources": true,
+    "include_dc_copper_losses": true
+  },
+  "differential_profile": {
+    "pairs": [
+      {
+        "name": "IO_5_IN_ISO",
+        "positive_net": "IO_5_IN_ISO_POS",
+        "negative_net": "IO_5_IN_ISO_NEG",
+        "interface": "GENERIC",
+        "target_impedance_ohm": 100.0,
+        "confidence": "SUSPECTED",
+        "evidence": [
+          "matching-net-names"
+        ],
+        "enabled": true,
+        "source": "auto",
+        "polarity_swappable": "unknown"
+      },
+      {
+        "name": "IO_5_OUT_ISO",
+        "positive_net": "IO_5_OUT_ISO_POS",
+        "negative_net": "IO_5_OUT_ISO_NEG",
+        "interface": "GENERIC",
+        "target_impedance_ohm": 100.0,
+        "confidence": "SUSPECTED",
+        "evidence": [
+          "matching-net-names"
+        ],
+        "enabled": true,
+        "source": "auto",
+        "polarity_swappable": "unknown"
+      },
+      {
+        "name": "IO_6_IN_ISO",
+        "positive_net": "IO_6_IN_ISO_POS",
+        "negative_net": "IO_6_IN_ISO_NEG",
+        "interface": "GENERIC",
+        "target_impedance_ohm": 100.0,
+        "confidence": "SUSPECTED",
+        "evidence": [
+          "matching-net-names"
+        ],
+        "enabled": true,
+        "source": "auto",
+        "polarity_swappable": "unknown"
+      },
+      {
+        "name": "IO_6_OUT_ISO",
+        "positive_net": "IO_6_OUT_ISO_POS",
+        "negative_net": "IO_6_OUT_ISO_NEG",
+        "interface": "GENERIC",
+        "target_impedance_ohm": 100.0,
+        "confidence": "SUSPECTED",
+        "evidence": [
+          "matching-net-names"
+        ],
+        "enabled": true,
+        "source": "auto",
+        "polarity_swappable": "unknown"
+      },
+      {
+        "name": "/COMMS/RD",
+        "positive_net": "/Comms/RD+",
+        "negative_net": "/Comms/RD-",
+        "interface": "USB",
+        "target_impedance_ohm": 90.0,
+        "confidence": "SUSPECTED",
+        "evidence": [
+          "matching-net-names"
+        ],
+        "enabled": true,
+        "source": "auto",
+        "polarity_swappable": "no"
+      },
+      {
+        "name": "/COMMS/TD",
+        "positive_net": "/Comms/TD+",
+        "negative_net": "/Comms/TD-",
+        "interface": "USB",
+        "target_impedance_ohm": 90.0,
+        "confidence": "SUSPECTED",
+        "evidence": [
+          "matching-net-names"
+        ],
+        "enabled": true,
+        "source": "auto",
+        "polarity_swappable": "no"
+      }
+    ],
+    "ignored_pair_signatures": [],
+    "stackup_override": null,
+    "reference_net_names": [
+      "GND",
+      "AGND",
+      "DGND",
+      "PGND"
+    ],
+    "target_tolerance_pct": 10.0,
+    "include_solder_mask": true,
+    "solder_mask_thickness_mm": 0.02,
+    "solder_mask_epsilon_r": 3.3,
+    "fabrication_profile": "GENERIC",
+    "geometry_mode": "AUTO",
+    "coplanar_ground_gap_mm": 0.15,
+    "enable_targeted_3d_refinement": true,
+    "targeted_3d_max_sections": 4,
+    "targeted_3d_error_threshold_pct": 10.0,
+    "minimum_width_mm": 0.1,
+    "minimum_gap_mm": 0.1,
+    "minimum_ground_clearance_mm": 0.15
+  },
+  "emc_profile": {
+    "standard": "CISPR_32_CLASS_B",
+    "market": "EU",
+    "frequency_start_hz": 30000000.0,
+    "frequency_stop_hz": 1000000000.0,
+    "reference_net_names": [
+      "GND",
+      "AGND",
+      "DGND",
+      "PGND"
+    ],
+    "enabled_categories": [
+      "GROUND",
+      "DECOUPLING",
+      "IO",
+      "SWITCHING",
+      "CLOCK",
+      "STACKUP",
+      "DIFFERENTIAL",
+      "BOARD_EDGE",
+      "PDN",
+      "RETURN_PATH",
+      "CROSSTALK",
+      "ESD",
+      "SHIELDING",
+      "STITCHING",
+      "THERMAL",
+      "EMISSIONS"
+    ],
+    "maximum_findings_per_rule_for_score": 3,
+    "external_connector_prefixes": [
+      "J",
+      "P",
+      "CN"
+    ],
+    "field_simulation_enabled": true,
+    "field_probe_height_mm": 3.0,
+    "field_grid_size_mm": 1.0,
+    "field_frequency_hz": 0.0,
+    "field_maximum_cells": 250000,
+    "phase10": {
+      "enabled": true,
+      "spice_enabled": true,
+      "full_wave_enabled": true,
+      "auto_run_full_wave": false,
+      "full_wave_backend": "OPENEMS_LOCAL",
+      "ngspice_path": "C:\\Spice64\\bin\\ngspice_con.exe",
+      "spice_library_path": "C:\\Users\\jbc66\\Documents\\DAW CONTROLEUR\\Lib\\SPICE",
+      "openems_root": "C:\\openEMS",
+      "openems_python_path": "",
+      "gmsh_path": "",
+      "palace_path": "",
+      "palace_remote_host": "",
+      "palace_remote_port": 22,
+      "palace_remote_username": "",
+      "palace_remote_identity_file": "",
+      "palace_remote_root": "~/kipida-palace",
+      "palace_remote_executable": "palace",
+      "palace_remote_config_path": "C:\\Users\\Scara-Tech\\Documents\\KiCad\\10.0\\3rdparty\\plugins\\KiPIDA\\examples\\palace-lan-minimal\\minimal-electrostatic.json",
+      "palace_remote_mpi_processes": 1,
+      "palace_remote_host_key_policy": "STRICT",
+      "palace_remote_connect_timeout_s": 10.0,
+      "palace_remote_keep_files": true,
+      "output_directory": "",
+      "maximum_regions": 3,
+      "region_margin_mm": 5.0,
+      "mesh_resolution_mm": 0.25,
+      "maximum_cells": 2000000,
+      "solver_timeout_s": 600.0,
+      "openems_max_timesteps": 8000,
+      "openems_end_criteria": 0.001,
+      "differential_excitation_mode": "DIFFERENTIAL",
+      "differential_leg_impedance_ohm": 45.0,
+      "progress_interval_s": 5.0,
+      "receiver_distance_m": 3.0,
+      "receiver_detector": "QUASI_PEAK",
+      "receiver_rbw_hz": 120000.0,
+      "include_cables": true,
+      "include_enclosure": false
+    },
+    "inductor_models": [],
+    "sources": [
+      {
+        "name": "/Comms/CLK",
+        "net_name": "/Comms/CLK",
+        "kind": "CLOCK",
+        "frequency_hz": 25000000.0,
+        "rise_time_ns": 2.0,
+        "external": false,
+        "cable_length_m": 0.0,
+        "enabled": true,
+        "source": "auto",
+        "voltage_swing_v": 3.3,
+        "current_a": 0.1,
+        "negative_net_name": "",
+        "parameter_confidence": "LOW",
+        "parameter_notes": "Editable engineering defaults"
+      },
+      {
+        "name": "/Comms/REF_CLK",
+        "net_name": "/Comms/REF_CLK",
+        "kind": "CLOCK",
+        "frequency_hz": 25000000.0,
+        "rise_time_ns": 2.0,
+        "external": false,
+        "cable_length_m": 0.0,
+        "enabled": true,
+        "source": "auto",
+        "voltage_swing_v": 3.3,
+        "current_a": 0.1,
+        "negative_net_name": "",
+        "parameter_confidence": "LOW",
+        "parameter_notes": "Editable engineering defaults"
+      },
+      {
+        "name": "/Comms/usbce",
+        "net_name": "/Comms/usbce",
+        "kind": "DIGITAL",
+        "frequency_hz": 100000000.0,
+        "rise_time_ns": 1.0,
+        "external": false,
+        "cable_length_m": 0.0,
+        "enabled": true,
+        "source": "auto",
+        "voltage_swing_v": 0.4,
+        "current_a": 0.008,
+        "negative_net_name": "",
+        "parameter_confidence": "LOW",
+        "parameter_notes": "Interface-name defaults; confirm activity rate and edge time."
+      },
+      {
+        "name": "/Processor/VDDPLLUSB",
+        "net_name": "/Processor/VDDPLLUSB",
+        "kind": "DIGITAL",
+        "frequency_hz": 100000000.0,
+        "rise_time_ns": 1.0,
+        "external": false,
+        "cable_length_m": 0.0,
+        "enabled": true,
+        "source": "auto",
+        "voltage_swing_v": 0.4,
+        "current_a": 0.008,
+        "negative_net_name": "",
+        "parameter_confidence": "LOW",
+        "parameter_notes": "Interface-name defaults; confirm activity rate and edge time."
+      },
+      {
+        "name": "USB_PWR_EN",
+        "net_name": "USB_PWR_EN",
+        "kind": "DIGITAL",
+        "frequency_hz": 100000000.0,
+        "rise_time_ns": 1.0,
+        "external": false,
+        "cable_length_m": 0.0,
+        "enabled": true,
+        "source": "auto",
+        "voltage_swing_v": 0.4,
+        "current_a": 0.008,
+        "negative_net_name": "",
+        "parameter_confidence": "LOW",
+        "parameter_notes": "Interface-name defaults; confirm activity rate and edge time."
+      },
+      {
+        "name": "USB_STATE",
+        "net_name": "USB_STATE",
+        "kind": "DIGITAL",
+        "frequency_hz": 100000000.0,
+        "rise_time_ns": 1.0,
+        "external": false,
+        "cable_length_m": 0.0,
+        "enabled": true,
+        "source": "auto",
+        "voltage_swing_v": 0.4,
+        "current_a": 0.008,
+        "negative_net_name": "",
+        "parameter_confidence": "LOW",
+        "parameter_notes": "Interface-name defaults; confirm activity rate and edge time."
+      },
+      {
+        "name": "USB_UFP_DETECT",
+        "net_name": "USB_UFP_DETECT",
+        "kind": "DIGITAL",
+        "frequency_hz": 100000000.0,
+        "rise_time_ns": 1.0,
+        "external": false,
+        "cable_length_m": 0.0,
+        "enabled": true,
+        "source": "auto",
+        "voltage_swing_v": 0.4,
+        "current_a": 0.008,
+        "negative_net_name": "",
+        "parameter_confidence": "LOW",
+        "parameter_notes": "Interface-name defaults; confirm activity rate and edge time."
+      },
+      {
+        "name": "IO_5_IN_ISO",
+        "net_name": "IO_5_IN_ISO_POS",
+        "kind": "DIFFERENTIAL",
+        "frequency_hz": 125000000.0,
+        "rise_time_ns": 0.8,
+        "external": false,
+        "cable_length_m": 0.0,
+        "enabled": true,
+        "source": "differential-scan",
+        "voltage_swing_v": 3.3,
+        "current_a": 0.1,
+        "negative_net_name": "IO_5_IN_ISO_NEG",
+        "parameter_confidence": "MEDIUM",
+        "parameter_notes": "Differential nets confirmed by pair scan; USB HS uses a 240 MHz maximum-toggle fundamental derived from the 480 Mbit/s NRZI rate. Electrical levels, edge time and activity remain editable defaults."
+      },
+      {
+        "name": "IO_5_OUT_ISO",
+        "net_name": "IO_5_OUT_ISO_POS",
+        "kind": "DIFFERENTIAL",
+        "frequency_hz": 125000000.0,
+        "rise_time_ns": 0.8,
+        "external": false,
+        "cable_length_m": 0.0,
+        "enabled": true,
+        "source": "differential-scan",
+        "voltage_swing_v": 3.3,
+        "current_a": 0.1,
+        "negative_net_name": "IO_5_OUT_ISO_NEG",
+        "parameter_confidence": "MEDIUM",
+        "parameter_notes": "Differential nets confirmed by pair scan; USB HS uses a 240 MHz maximum-toggle fundamental derived from the 480 Mbit/s NRZI rate. Electrical levels, edge time and activity remain editable defaults."
+      },
+      {
+        "name": "IO_6_IN_ISO",
+        "net_name": "IO_6_IN_ISO_POS",
+        "kind": "DIFFERENTIAL",
+        "frequency_hz": 125000000.0,
+        "rise_time_ns": 0.8,
+        "external": false,
+        "cable_length_m": 0.0,
+        "enabled": true,
+        "source": "differential-scan",
+        "voltage_swing_v": 3.3,
+        "current_a": 0.1,
+        "negative_net_name": "IO_6_IN_ISO_NEG",
+        "parameter_confidence": "MEDIUM",
+        "parameter_notes": "Differential nets confirmed by pair scan; USB HS uses a 240 MHz maximum-toggle fundamental derived from the 480 Mbit/s NRZI rate. Electrical levels, edge time and activity remain editable defaults."
+      },
+      {
+        "name": "IO_6_OUT_ISO",
+        "net_name": "IO_6_OUT_ISO_POS",
+        "kind": "DIFFERENTIAL",
+        "frequency_hz": 125000000.0,
+        "rise_time_ns": 0.8,
+        "external": false,
+        "cable_length_m": 0.0,
+        "enabled": true,
+        "source": "differential-scan",
+        "voltage_swing_v": 3.3,
+        "current_a": 0.1,
+        "negative_net_name": "IO_6_OUT_ISO_NEG",
+        "parameter_confidence": "MEDIUM",
+        "parameter_notes": "Differential nets confirmed by pair scan; USB HS uses a 240 MHz maximum-toggle fundamental derived from the 480 Mbit/s NRZI rate. Electrical levels, edge time and activity remain editable defaults."
+      },
+      {
+        "name": "/COMMS/RD",
+        "net_name": "/Comms/RD+",
+        "kind": "DIFFERENTIAL",
+        "frequency_hz": 240000000.0,
+        "rise_time_ns": 0.8,
+        "external": false,
+        "cable_length_m": 0.0,
+        "enabled": true,
+        "source": "differential-scan",
+        "voltage_swing_v": 0.4,
+        "current_a": 0.008,
+        "negative_net_name": "/Comms/RD-",
+        "parameter_confidence": "MEDIUM",
+        "parameter_notes": "Differential nets confirmed by pair scan; USB HS uses a 240 MHz maximum-toggle fundamental derived from the 480 Mbit/s NRZI rate. Electrical levels, edge time and activity remain editable defaults."
+      },
+      {
+        "name": "/COMMS/TD",
+        "net_name": "/Comms/TD+",
+        "kind": "DIFFERENTIAL",
+        "frequency_hz": 240000000.0,
+        "rise_time_ns": 0.8,
+        "external": false,
+        "cable_length_m": 0.0,
+        "enabled": true,
+        "source": "differential-scan",
+        "voltage_swing_v": 0.4,
+        "current_a": 0.008,
+        "negative_net_name": "/Comms/TD-",
+        "parameter_confidence": "MEDIUM",
+        "parameter_notes": "Differential nets confirmed by pair scan; USB HS uses a 240 MHz maximum-toggle fundamental derived from the 480 Mbit/s NRZI rate. Electrical levels, edge time and activity remain editable defaults."
+      }
+    ]
+  }
+}

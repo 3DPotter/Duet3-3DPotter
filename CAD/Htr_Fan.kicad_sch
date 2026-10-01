@@ -7457,7 +7457,7 @@
 			)
 		)
 	)
-	(global_label "5V_INT"
+	(global_label "+5V_INT"
 		(shape input)
 		(at 76.2 215.9 180)
 		(fields_autoplaced yes)
@@ -8033,7 +8033,7 @@
 			)
 		)
 	)
-	(global_label "5V_INT"
+	(global_label "+5V_INT"
 		(shape input)
 		(at 191.77 215.9 180)
 		(fields_autoplaced yes)
@@ -8369,7 +8369,7 @@
 			)
 		)
 	)
-	(global_label "5V_INT"
+	(global_label "+5V_INT"
 		(shape input)
 		(at 175.26 154.94 180)
 		(fields_autoplaced yes)

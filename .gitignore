@@ -22,3 +22,7 @@ fp-info-cache
 */production/*.ipc
 */production/*.zip
 
+/KiPIDA-results/
+/KiPIDA-results/*
+*/KiPIDA-results/
+*/KiPIDA-results/*
