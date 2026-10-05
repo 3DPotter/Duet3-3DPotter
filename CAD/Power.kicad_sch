@@ -5045,16 +5045,6 @@
 		)
 		(uuid "82d8c715-2271-45d3-8b2d-af9fa5ce1b00")
 	)
-	(text "If you can think of a good reason that this is a bad idea\nThen be my guest and change this"
-		(exclude_from_sim no)
-		(at 86.36 149.86 0)
-		(effects
-			(font
-				(size 0.508 0.508)
-			)
-		)
-		(uuid "89bdc7ac-6772-404c-9eaa-3e59b8538342")
-	)
 	(text "Power LEDs"
 		(exclude_from_sim no)
 		(at 119.38 204.47 0)
@@ -5535,6 +5525,12 @@
 		(uuid "ce9f6894-41dd-4763-952f-9ea42f26f4dd")
 	)
 	(junction
+		(at 85.09 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d19adc99-5a98-440c-9c33-3cee6bd24b02")
+	)
+	(junction
 		(at 64.77 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5638,7 +5634,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 161.29) (xy 88.9 161.29)
+			(xy 73.66 161.29) (xy 85.09 161.29)
 		)
 		(stroke
 			(width 0)
@@ -7158,6 +7154,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 161.29) (xy 88.9 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95fb2281-f5d8-4913-b97b-56e391686c8d")
+	)
+	(wire
+		(pts
 			(xy 48.26 260.35) (xy 52.07 260.35)
 		)
 		(stroke
@@ -8318,6 +8324,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 158.75) (xy 85.09 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6fbea54-3911-4ea5-bacc-7e45f54bad1a")
+	)
+	(wire
+		(pts
 			(xy 59.69 276.86) (xy 72.39 276.86)
 		)
 		(stroke
@@ -8405,16 +8421,6 @@
 			(type default)
 		)
 		(uuid "fdcb05f9-5085-4bd0-872d-1896a1a8e16d")
-	)
-	(polyline
-		(pts
-			(xy 78.74 149.86) (xy 78.74 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff46e2b1-ee52-4e08-b53c-bd671737f5b4")
 	)
 	(polyline
 		(pts
@@ -8525,16 +8531,6 @@
 			(justify right bottom)
 		)
 		(uuid "5397a540-1af7-4522-b861-62fbdd8f202e")
-	)
-	(label "+5V_Common"
-		(at 85.09 158.75 180)
-		(effects
-			(font
-				(size 0.4064 0.4064)
-			)
-			(justify right bottom)
-		)
-		(uuid "66bd4ef2-5081-422b-89aa-4ea93f2937cd")
 	)
 	(label "CBOOT"
 		(at 156.21 39.37 0)
@@ -13867,7 +13863,7 @@
 				)
 			)
 		)
-		(property "Value" "3.3uH 1.2A"
+		(property "Value" "3.9uH 3A"
 			(at 123.19 140.97 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13877,7 +13873,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
+		(property "Footprint" "Inductor_SMD:L_Abracon_ASPI-0628"
 			(at 123.19 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -13888,7 +13884,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8588934764652318720-C98339.pdf?response-content-disposition=attachment%3B%20filename%3DC98339.pdf%3B%20filename%2A%3DUTF-8%27%27C98339.pdf&x-oss-date=20260921T132050Z&x-oss-expires=3600&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5vQIffCoap1%2FPS8SXfnj1A8eOJviY7xqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qY0nnkEl557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWoqrQuN8i6HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIpA6m9KKWD5sagAGQrqycrlwowZUTEVA5WTVNLbACEp84koVXHimZV2vxVCkFjDnzfhMc1ZAJSDlqJsFkKUDQr0bhXPcPWt%2F7MNQAw%2BQschzk3e%2BcSmKzjb5Z6h4%2FSoAecjcARI3YJfzKHayqdeOrgk5dndSW0iaOGqOlX79bODqV%2F5gd%2FjnVLlwmsCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXejMvLuTK6WKQVkPitmCfKZH%2F20260921%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=723193c2030fa5e5e60cc249eedcc96eb2b105975cd76c85e22431cfcae4b9ad"
+		(property "Datasheet" "https://abracon.com/Magnetics/new/ASPI-0628.pdf"
 			(at 123.19 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -13899,7 +13895,7 @@
 				)
 			)
 		)
-		(property "Description" "1.2A 100mΩ 3.3uH 30MHz Multilayer inductor ±20% 1008 Inductors (SMD) ROHS"
+		(property "Description" "2.7A 3.9uH 31mΩ 3A Magnetic Shielded Inductor ±20% 0628 Power Inductors ROHS"
 			(at 123.19 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -13910,7 +13906,7 @@
 				)
 			)
 		)
-		(property "P/N" "MPL2520S3R3MHT"
+		(property "P/N" "ASPI-0628-3R9M-T1"
 			(at 123.19 143.51 90)
 			(hide yes)
 			(show_name no)
@@ -13921,7 +13917,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C98339"
+		(property "LCSC" "C5570229"
 			(at 123.19 143.51 90)
 			(hide yes)
 			(show_name no)

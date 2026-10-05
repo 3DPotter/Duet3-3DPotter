@@ -210,7 +210,7 @@
       "loads": [
         {
           "ref_des": "J16",
-          "total_current": 0.4,
+          "total_current": 1.5,
           "pad_names": [
             "1"
           ],
@@ -458,7 +458,9 @@
         "rail_pad_names": [
           "1"
         ],
-        "ground_pad_names": []
+        "ground_pad_names": [
+          "2"
+        ]
       },
       "capacitors": [
         {
@@ -532,14 +534,14 @@
     "components": [
       {
         "ref_des": "D22",
-        "power_w": 0.12807933357115453,
+        "power_w": 0.128079,
         "width_mm": 3.0,
         "depth_mm": 3.0,
         "height_mm": 1.0,
-        "theta_jb_c_per_w": 20.0,
-        "max_junction_c": 125.0,
+        "theta_jb_c_per_w": 15.0,
+        "max_junction_c": 150.0,
         "enabled": true,
-        "model_source": "regulator-loss",
+        "model_source": "user",
         "geometry_source": "estimate",
         "thermal_source": "estimate",
         "thermal_condition": "",
@@ -577,7 +579,7 @@
       },
       {
         "ref_des": "F1",
-        "power_w": 0.2512317334284654,
+        "power_w": 0.26817091560475015,
         "width_mm": 3.0,
         "depth_mm": 3.0,
         "height_mm": 1.0,
@@ -652,11 +654,11 @@
       },
       {
         "ref_des": "U10",
-        "power_w": 0.717241,
-        "width_mm": 3.0,
-        "depth_mm": 3.0,
+        "power_w": 0.455,
+        "width_mm": 1.6,
+        "depth_mm": 2.9,
         "height_mm": 1.0,
-        "theta_jb_c_per_w": 20.0,
+        "theta_jb_c_per_w": 80.0,
         "max_junction_c": 150.0,
         "enabled": true,
         "model_source": "user",
@@ -667,14 +669,14 @@
       },
       {
         "ref_des": "U11",
-        "power_w": 0.49499999999999994,
-        "width_mm": 3.0,
-        "depth_mm": 3.0,
+        "power_w": 1.047,
+        "width_mm": 20.0,
+        "depth_mm": 20.0,
         "height_mm": 1.0,
-        "theta_jb_c_per_w": 20.0,
+        "theta_jb_c_per_w": 36.0,
         "max_junction_c": 125.0,
         "enabled": true,
-        "model_source": "power-tree-load",
+        "model_source": "user",
         "geometry_source": "estimate",
         "thermal_source": "estimate",
         "thermal_condition": "",
@@ -698,13 +700,13 @@
       {
         "ref_des": "U14",
         "power_w": 0.368,
-        "width_mm": 3.0,
-        "depth_mm": 3.0,
+        "width_mm": 7.8,
+        "depth_mm": 4.4,
         "height_mm": 1.0,
-        "theta_jb_c_per_w": 20.0,
+        "theta_jb_c_per_w": 55.0,
         "max_junction_c": 125.0,
         "enabled": true,
-        "model_source": "power-tree-load",
+        "model_source": "user",
         "geometry_source": "estimate",
         "thermal_source": "estimate",
         "thermal_condition": "",
@@ -728,8 +730,8 @@
       {
         "ref_des": "U24",
         "power_w": 1.69618,
-        "width_mm": 3.0,
-        "depth_mm": 3.0,
+        "width_mm": 6.0,
+        "depth_mm": 6.0,
         "height_mm": 1.0,
         "theta_jb_c_per_w": 11.7,
         "max_junction_c": 150.0,
@@ -743,13 +745,13 @@
       {
         "ref_des": "U25",
         "power_w": 0.368,
-        "width_mm": 3.0,
-        "depth_mm": 3.0,
+        "width_mm": 7.8,
+        "depth_mm": 4.4,
         "height_mm": 1.0,
-        "theta_jb_c_per_w": 20.0,
+        "theta_jb_c_per_w": 55.0,
         "max_junction_c": 125.0,
         "enabled": true,
-        "model_source": "power-tree-load",
+        "model_source": "user",
         "geometry_source": "estimate",
         "thermal_source": "estimate",
         "thermal_condition": "",
@@ -758,13 +760,13 @@
       {
         "ref_des": "U26",
         "power_w": 0.368,
-        "width_mm": 3.0,
-        "depth_mm": 3.0,
+        "width_mm": 7.8,
+        "depth_mm": 4.4,
         "height_mm": 1.0,
-        "theta_jb_c_per_w": 20.0,
+        "theta_jb_c_per_w": 55.0,
         "max_junction_c": 125.0,
         "enabled": true,
-        "model_source": "power-tree-load",
+        "model_source": "user",
         "geometry_source": "estimate",
         "thermal_source": "estimate",
         "thermal_condition": "",
