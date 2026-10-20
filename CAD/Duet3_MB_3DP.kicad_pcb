@@ -3813,7 +3813,7 @@
 				(pins "1" "2" "3" "4" "5" "6")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.61 2.31)
@@ -32886,7 +32886,7 @@
 				(pins "1" "2" "3" "4")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.6 -2.75)
@@ -33237,7 +33237,7 @@
 				(pins "1" "2" "3" "4")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.6 -2.75)
@@ -33588,7 +33588,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.6 -2.75)
@@ -33917,7 +33917,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.6 -2.75)
@@ -41933,6 +41933,12 @@
 		(path "/00000000-0000-0000-0000-000050523307/4ed941c2-dc7b-4ec2-8f85-388e7e11cc2a")
 		(sheetname "/Processor/")
 		(sheetfile "Processor.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -58579,6 +58585,12 @@
 		(path "/00000000-0000-0000-0000-000050523307/bcda161c-9033-489e-9752-dd642f291172")
 		(sheetname "/Processor/")
 		(sheetfile "Processor.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -63485,6 +63497,12 @@
 		(path "/00000000-0000-0000-0000-000050523307/9a410bc8-bafe-4c0a-a33c-57d9e7250f24")
 		(sheetname "/Processor/")
 		(sheetfile "Processor.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -68022,6 +68040,12 @@
 		(path "/00000000-0000-0000-0000-000050523307/ceed92ff-ad62-4e29-a840-97547c3ec015")
 		(sheetname "/Processor/")
 		(sheetfile "Processor.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
