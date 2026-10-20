@@ -13613,7 +13613,7 @@
 				)
 			)
 		)
-		(property "Part Number" "GRT32EC81C476KE13L"
+		(property "Part Number" "GRM32ER71A476KE15L or  GRM32ER61C476KE15L"
 			(at 204.47 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -13624,7 +13624,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C576521"
+		(property "LCSC" "C84494"
 			(at 204.47 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -16631,7 +16631,7 @@
 				)
 			)
 		)
-		(property "Part Number" "GRT32EC81C476KE13L"
+		(property "Part Number" "GRM32ER71A476KE15L or  GRM32ER61C476KE15L"
 			(at 212.09 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -16642,7 +16642,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C576521"
+		(property "LCSC" "C84494"
 			(at 212.09 54.61 0)
 			(hide yes)
 			(show_name no)
