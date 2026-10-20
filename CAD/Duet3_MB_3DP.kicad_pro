@@ -141,7 +141,7 @@
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
-        "tuning_profile_track_geometries": "ignore",
+        "tuning_profile_track_geometries": "warning",
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
@@ -974,7 +974,7 @@
         "uuid": "94813053-1316-4754-9fb4-4dbbf7dc780d"
       }
     ],
-    "used_designators": "R85-86,#PWR46,C41",
+    "used_designators": "R85-87,#PWR46,C41",
     "variants": []
   },
   "sheets": [

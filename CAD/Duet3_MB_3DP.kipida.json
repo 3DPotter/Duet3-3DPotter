@@ -338,7 +338,7 @@
     },
     {
       "net_name": "V_FUSED",
-      "nominal_voltage": 74.8,
+      "nominal_voltage": 74.9,
       "sources": [],
       "loads": [
         {
@@ -373,7 +373,7 @@
     },
     {
       "net_name": "/Power/L2",
-      "nominal_voltage": 74.3,
+      "nominal_voltage": 74.4,
       "sources": [],
       "loads": [],
       "child_regulators": [
@@ -398,7 +398,7 @@
     },
     {
       "net_name": "/Power/VIN1",
-      "nominal_voltage": 74.3,
+      "nominal_voltage": 74.4,
       "sources": [],
       "loads": [],
       "child_regulators": [
@@ -458,9 +458,7 @@
         "rail_pad_names": [
           "1"
         ],
-        "ground_pad_names": [
-          "2"
-        ]
+        "ground_pad_names": []
       },
       "capacitors": [
         {
@@ -654,11 +652,11 @@
       },
       {
         "ref_des": "U10",
-        "power_w": 0.455,
-        "width_mm": 1.6,
-        "depth_mm": 2.9,
+        "power_w": 1.1,
+        "width_mm": 13.0,
+        "depth_mm": 13.0,
         "height_mm": 1.0,
-        "theta_jb_c_per_w": 80.0,
+        "theta_jb_c_per_w": 60.0,
         "max_junction_c": 150.0,
         "enabled": true,
         "model_source": "user",
